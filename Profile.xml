@@ -1,0 +1,112 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="7D149D7EF9" name="ACH" version="1.0" notes="ACH"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="16776883" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
+				<AppliesTo>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Proveedor" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Aplicación" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Capacidad" metatype="Capacidad" notes="" cx="0" cy="0" bgcolor="8438015" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Capability" baseStereotypes="ArchiMate3::ArchiMate_Capability">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Estado Capacidad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Capacidad" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Cliente" metatype="Cliente" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessActor" baseStereotypes="ArchiMate3::ArchiMate_BusinessActor">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Subtipo Cliente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Cliente" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Línea de Negocio" metatype="Línea de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessCollaboration" baseStereotypes="ArchiMate3::ArchiMate_BusinessCollaboration">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Marca" metatype="Marca" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Representation" baseStereotypes="ArchiMate3::ArchiMate_Representation">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Producto" metatype="Producto" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Product" baseStereotypes="ArchiMate3::ArchiMate_Product">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Servicio" metatype="Servicio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessService" baseStereotypes="ArchiMate3::ArchiMate_BusinessService">
+				<AppliesTo>
+					<Apply type="Activity">
+						<Property name="isReadOnly" value="false"/>
+						<Property name="isSingleExecution" value=""/>
+						<Property name="parameterName" value=""/>
+						<Property name="postcondition" value=""/>
+						<Property name="precondition" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Estado Servicio" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Servicio" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Servidor" metatype="Servidor" notes="" cx="0" cy="0" bgcolor="12648384" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Node" baseStereotypes="ArchiMate3::ArchiMate_Node">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="_tagGroupings" value="Gerencia=Gestión;Ambiente=Entorno;Función=Entorno;Servicio=Entorno;Rol Servidor=Entorno;Nube=Ubicación;Datacenter=Ubicación;"/>
+						<Property name="_tagGroups" value="Gestión,Entorno,Ubicación"/>
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Datacenter" type="" description="" unit="" values="" default=""/>
+					<Tag name="Función" type="" description="" unit="" values="" default=""/>
+					<Tag name="Gerencia" type="" description="" unit="" values="" default=""/>
+					<Tag name="Hostname" type="" description="" unit="" values="" default=""/>
+					<Tag name="IP Principal" type="" description="" unit="" values="" default=""/>
+					<Tag name="Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Rol Servidor" type="" description="" unit="" values="" default=""/>
+					<Tag name="Servicio" type="" description="" unit="" values="" default=""/>
+					<Tag name="Sistema Operativo" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Servidor" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Tercero" metatype="Tercero" notes="" cx="0" cy="0" bgcolor="12582910" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessActor" baseStereotypes="ArchiMate3::ArchiMate_BusinessActor">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo Tercero" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>
