@@ -1,0 +1,30 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="361438F64E" name="ACH_Capa_de_Seguridad" version="1.0" alias="Capa de Seguridad" notes="Alias=Capa de Seguridad;"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Capa de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ACH::Control(UML::Feature)" type="" description="" unit="" values="" default="Control"/>
+					<Tag name="ACH::Riesgo inherente(UML::Risk)" type="" description="" unit="" values="" default="Riesgo inherente"/>
+					<Tag name="ACH::Riesgo residual(UML::Risk)" type="" description="" unit="" values="" default="Riesgo residual"/>
+					<Tag name="ACH::Riesgo(UML::Risk)" type="" description="" unit="" values="" default="Riesgo"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Conectores" notes="" cx="219" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+		<ViewDefinitions/>
+		<Metamodel/>
+	</Content>
+</UMLProfile>

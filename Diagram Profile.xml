@@ -3,7 +3,7 @@
 	<Documentation id="0C205AE51F" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Aplicaciones" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Diagrama de Aplicaciones" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="Diagram_Logical">
 						<Property name="pdata" value="HideParents=1;"/>
@@ -11,7 +11,15 @@
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Diagrama de Datos" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="pdata" value="HideParents=1;"/>
+						<Property name="toolbox" value="ACH_Capa_de_Datos"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Diagrama de Infraestructura" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="Diagram_Logical">
 						<Property name="pdata" value="HideParents=1;"/>
@@ -19,11 +27,19 @@
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Capa de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Diagrama de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="Diagram_Logical">
 						<Property name="pdata" value="HideParents=1;"/>
 						<Property name="toolbox" value="ACH_Capa_de_Negocio"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Diagrama de Seguridad" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Analysis">
+						<Property name="pdata" value="HideParents=1;"/>
+						<Property name="toolbox" value="ACH_Capa_de_Seguridad"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>

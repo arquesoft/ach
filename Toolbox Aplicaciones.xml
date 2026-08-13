@@ -3,12 +3,22 @@
 	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Capa de Aplicaciones" notes="Alias=Capa de Aplicaciones;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Aplicaciones" notes="" cx="216" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Aplicaciones" notes="" cx="243" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
+					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Conectores" notes="" cx="219" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>
