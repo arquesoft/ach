@@ -1,8 +1,8 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <MDG.Technology version="1.0"><Documentation id="ACHMDG" name="ACH" version="1.0" notes="MDG Technology for ACH - Developed by Arquesoft" supportURI="support@arquesoft.com"/><Logo><Image type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1ayQAAAAAAAIoAAAB8AAAAzAAAAFQAAAABABgAAAAAANDIAAAjLgAAIy4A
-AAAAAAAAAAAAIABwAHIAbwBmAGkAbABlAHQAeQBwAGUAPQAiAHUAbQBsADIA
-IgA+AAoACQA8AEQAbwBjAHUAbQBlAG4AdABhAHQAaQBvAG4AIABpAGQAPQAi
-ADMA////////////////////////////////////////////////////////
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAA////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 /////////f7//f///f///f7/////////////////////////////////////
 /////////////////////////////////////////////f7/////////////
@@ -2012,16 +2012,16 @@ AAEAPgAAAAICAAAAAA==
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Canal(UML::Interface)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente de Negocio de Actor(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio de Actor"/>
-					<Tag name="ACH::Componente de Negocio Interno(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio Interno"/>
+					<Tag name="ACH::Componente de Actor de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente Actor de Negocio"/>
 					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
+					<Tag name="ACH::Componente Interno de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente Interno de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
 					<Tag name="ACH::Servicio(UML::Activity)" type="" description="" unit="" values="" default="Servicio"/>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Tercero(UML::Class)" type="" description="" unit="" values="" default="Tercero"/>
 					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
 					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
@@ -2107,25 +2107,25 @@ AAEAPgAAAAICAAAAAA==
 	<Documentation id="F5E3CDCCDA" name="ACH_Capa_de_Negocio" version="1.0" alias="Capa de Negocio" notes="Alias=Capa de Negocio;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Negocio" notes="" cx="272" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Negocio" notes="" cx="348" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
+					<Tag name="ACH::Canal(UML::Interface)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente Actor(ACH::Class)" type="" description="" unit="" values="" default="Componente Actor"/>
-					<Tag name="ACH::Componente Interno(ACH::Class)" type="" description="" unit="" values="" default="Componente Interno"/>
-					<Tag name="ACH::Componente(UML::Class)" type="" description="" unit="" values="" default="Componente"/>
+					<Tag name="ACH::Componente de Actor de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente Actor de Negocio"/>
+					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
+					<Tag name="ACH::Componente Interno de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente Interno de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
-					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
-					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
-					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
 					<Tag name="ACH::Servicio(UML::Activity)" type="" description="" unit="" values="" default="Servicio"/>
 					<Tag name="ACH::Tercero(UML::Class)" type="" description="" unit="" values="" default="Tercero"/>
+					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
+					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
+					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Conectores" notes="" cx="219" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
