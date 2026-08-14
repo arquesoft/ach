@@ -35,6 +35,14 @@
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
+			<Stereotype name="Diagrama de Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Component">
+						<Property name="pdata" value="HideParents=1;"/>
+						<Property name="toolbox" value="ACH_Nubes"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
 			<Stereotype name="Diagrama de Seguridad" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="Diagram_Analysis">

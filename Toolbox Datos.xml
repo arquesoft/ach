@@ -22,6 +22,7 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
+					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>

@@ -3,12 +3,26 @@
 	<Documentation id="7D149D7EF9" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
+			<Stereotype name="ACH::Componente" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
+			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Boundary"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Agrupamiento Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
 			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="16776883" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
-						<Property name="isIndirectlyInstantiated" value="true"/>
-						<Property name="_makeComposite" value="True"/>
 						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
@@ -17,7 +31,7 @@
 					<Tag name="Tipo Aplicación" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Appliance" metatype="Appliance" notes="" cx="0" cy="0" bgcolor="11075496" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
+			<Stereotype name="Appliance" metatype="Appliance" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="11075496" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -38,7 +52,7 @@
 					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Balanceador" metatype="Balanceador" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
+			<Stereotype name="Balanceador" metatype="Balanceador" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -253,24 +267,24 @@ SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 					<Tag name="Tipo Cliente" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Componente" metatype="Componente" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessRole" baseStereotypes="ArchiMate3::ArchiMate_BusinessRole">
+			<Stereotype name="Componente" metatype="Componente" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
-					<Apply type="Class">
-						<Property name="isActive" value=""/>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Componente Actor" metatype="Componente Actor" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Componente" baseStereotypes="Componente">
+			<Stereotype name="Componente Actor" metatype="Componente Actor" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente" baseStereotypes="ACH::Componente">
 				<AppliesTo>
-					<Apply type="Class">
-						<Property name="isActive" value=""/>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Componente Interno" metatype="Componente Interno" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="Componente" baseStereotypes="Componente">
+			<Stereotype name="Componente Interno" metatype="Componente Interno" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente" baseStereotypes="ACH::Componente">
 				<AppliesTo>
-					<Apply type="Class">
-						<Property name="isActive" value=""/>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
@@ -301,7 +315,18 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="Aplicación Relacionada" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto de la Solución" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha de creación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Ingeniero de Aplicaciones" type="" description="" unit="" values="" default=""/>
+					<Tag name="Innovación o Mantenimiento" type="" description="" unit="" values="" default=""/>
+					<Tag name="Líder de Equipo" type="" description="" unit="" values="" default=""/>
+					<Tag name="Líder de Seguridad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Líder Técnico" type="" description="" unit="" values="" default=""/>
+					<Tag name="Product Owner" type="" description="" unit="" values="" default=""/>
+					<Tag name="Servicio Relacionado" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo de requerimiento" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Control" metatype="Control" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -310,6 +335,107 @@ wMDAwMDAwMDAwMDA
 						<Property name="isStatic" value="false"/>
 					</Apply>
 				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Elemento de Nube" metatype="Elemento de Nube" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="15453831" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Elemento Nube" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Entorno Ejecucion Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ExecutionEnvironment">
+						<Property name="isExecutionEnvironment" value="true"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Ambiente Nube" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" instanceType="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
+				<AppliesTo>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo de Ejecutable" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Interfaz de Integración" metatype="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
+				<AppliesTo>
+					<Apply type="Interface">
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="_tagGroupings" value="Patrón Composición=API-Webservice;Patrón Exposición=API-Webservice;Patrón Pass Through=API-Webservice;Patrón Wrapper=API-Webservice;Es Síncrono=API-Webservice;Patrón Integración Composición=Integración;Patrón Integración Orquestación=Integración;Patrón Integración Transformación=Integración;Patrón Integración Enrutamiento=Integración;Patrón Integración Adaptador-Conector=Integración;Patrón Integración Validación=Integración;Patrón Integración Enriquecimiento=Integración;Patrón Integración Batch Processing=Integración;Patrón Seguridad Gateway=Servicio de Seguridad;Patrón Seguridad Wrapper Seguro=Servicio de Seguridad;Patrón Seguridad Pass Through Seguro=Servicio de Seguridad;Patrón Seguridad Terminación TLS-mTLS=Servicio de Seguridad;Dominio=Servicio de Seguridad;Patrón Colas Punto a Punto=Servicio de Colas;Patrón Colas Publicador-Suscriptor=Servicio de Colas;Patrón Colas Request-Reply=Servicio de Colas;Patrón Colas Dead Letter Queue=Servicio de Colas;Patrón Colas Backout Queue=Servicio de Colas;Patrón Colas Priorización Mensajes=Servicio de Colas;Es Persistente=Servicio de Colas;Patrón STA MFT=Servicio Transferencia de Archivos;Patrón STA Intercambio Seguro Archivos=Servicio Transferencia de Archivos;Patrón STA Transferencia Programada=Servicio Transferencia de Archivos;Patrón STA Transferencia Basada en Eventos=Servicio Transferencia de Archivos;Patrón STA Automatización de Flujos de Archivos=Servicio Transferencia de Archivos;Patrón STA File Pickup / File Drop=Servicio Transferencia de Archivos;Patrón STA Distribución Multidestino=Servicio Transferencia de Archivos;Patrón STA Consolidación de Archivos=Servicio Transferencia de Archivos;Patrón STA Cifrado y Decifrado de Archivos=Servicio Transferencia de Archivos;Patrón STA Compresión y Descompresión=Servicio Transferencia de Archivos;Patrón STA Intercambio B2B de Archivos=Servicio Transferencia de Archivos;"/>
+						<Property name="_tagGroups" value="API-Webservice,Integración,Servicio de Seguridad,Servicio de Colas,Servicio Transferencia de Archivos"/>
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Dominio" type="" description="" unit="" values="" default=""/>
+					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
+					<Tag name="Es Persistente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Es Síncrono" type="" description="" unit="" values="" default=""/>
+					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Colas Backout Queue" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Colas Dead Letter Queue" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Colas Priorización Mensajes" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Colas Publicador-Suscriptor" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Colas Punto a Punto" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Colas Request-Reply" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Composición" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Exposición" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Adaptador-Conector" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Batch Processing" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Composición" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Enriquecimiento" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Enrutamiento" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Orquestación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Transformación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Integración Validación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Pass Through" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Seguridad Gateway" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Seguridad Pass Through Seguro" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Seguridad Terminación TLS-mTLS" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Seguridad Wrapper Seguro" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Automatización de Flujos de Archivos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Cifrado y Decifrado de Archivos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Compresión y Descompresión" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Consolidación de Archivos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Distribución Multidestino" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA File Pickup / File Drop" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Intercambio B2B de Archivos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Intercambio Seguro Archivos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA MFT" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Transferencia Basada en Eventos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón STA Transferencia Programada" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Wrapper" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo de Interfaz de Integración" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" instanceType="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
+				<AppliesTo>
+					<Apply type="Interface"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Herramienta Integración" type="" description="" unit="" values="" default=""/>
+					<Tag name="Otra Herramienta Integración" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Línea de Negocio" metatype="Línea de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessCollaboration" baseStereotypes="ArchiMate3::ArchiMate_BusinessCollaboration">
 				<AppliesTo>
@@ -325,7 +451,7 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Middleware" metatype="Middleware" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Middleware" metatype="Middleware" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -495,6 +621,17 @@ AAA=
 					<Tag name="Tipo Servidor" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
+			<Stereotype name="Sistema" metatype="Sistema" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Sistema" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
 			<Stereotype name="Solución" metatype="Solución" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="PackagingComponent"/>
@@ -536,7 +673,7 @@ AAEAPgAAAAICAAAAAA==
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="_style" type="" description="" unit="" values="" default="Ortogonal - Rounded"/>
+					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
 					<Tag name="ID" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Canal" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
