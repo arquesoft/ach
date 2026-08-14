@@ -1,8 +1,8 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <MDG.Technology version="1.0"><Documentation id="ACHMDG" name="ACH" version="1.0" notes="MDG Technology for ACH - Developed by Arquesoft" supportURI="support@arquesoft.com"/><Logo><Image type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1ayQAAAAAAAIoAAAB8AAAAzAAAAFQAAAABABgAAAAAANDIAAAjLgAAIy4A
-AAAAAAAAAAAAZQAgAHAAcgBvAGYAaQBsAGUAdAB5AHAAZQA9ACIAdQBtAGwA
-MgAiAD4ADQAKAAkAPABEAG8AYwB1AG0AZQBuAHQAYQB0AGkAbwBuACAAaQBk
-AD0A////////////////////////////////////////////////////////
+AAAAAAAAAAAAIABwAHIAbwBmAGkAbABlAHQAeQBwAGUAPQAiAHUAbQBsADIA
+IgA+AAoACQA8AEQAbwBjAHUAbQBlAG4AdABhAHQAaQBvAG4AIABpAGQAPQAi
+ADMA////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 /////////f7//f///f///f7/////////////////////////////////////
 /////////////////////////////////////////////f7/////////////
@@ -1168,26 +1168,26 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 	<Documentation id="7D149D7EF9" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="ACH::Componente" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
-			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="ACH::Componente de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
+			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
 				<AppliesTo>
 					<Apply type="Boundary"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Agrupamiento Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="16776883" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
-						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
-						<Property name="_makeComposite" value="True"/>
 						<Property name="isIndirectlyInstantiated" value="true"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
@@ -1326,9 +1326,7 @@ I6I9alBLBQYAAAAAAQABAD4AAACWAgAAAAA=
 			</Stereotype>
 			<Stereotype name="Canal" metatype="Canal" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessInterface" baseStereotypes="ArchiMate3::ArchiMate_BusinessInterface">
 				<AppliesTo>
-					<Apply type="Class">
-						<Property name="isActive" value=""/>
-					</Apply>
+					<Apply type="Interface"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ID" type="" description="" unit="" values="" default=""/>
@@ -1432,21 +1430,21 @@ SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 					<Tag name="Tipo Cliente" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Componente" metatype="Componente" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
+			<Stereotype name="Componente de Actor de Negocio" metatype="Componente de Actor de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Componente Actor" metatype="Componente Actor" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente" baseStereotypes="ACH::Componente">
+			<Stereotype name="Componente de Negocio" metatype="Componente de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Componente Interno" metatype="Componente Interno" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente" baseStereotypes="ACH::Componente">
+			<Stereotype name="Componente Interno de Negocio" metatype="Componente Interno de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
@@ -1508,13 +1506,13 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Elemento Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Entorno Ejecucion Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1524,11 +1522,11 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" instanceType="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
@@ -1544,19 +1542,17 @@ wMDAwMDAwMDAwMDA
 			<Stereotype name="Interfaz de Integración" metatype="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
 				<AppliesTo>
 					<Apply type="Interface">
-						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
-						<Property name="_makeComposite" value="True"/>
 						<Property name="_tagGroupings" value="Patrón Composición=API-Webservice;Patrón Exposición=API-Webservice;Patrón Pass Through=API-Webservice;Patrón Wrapper=API-Webservice;Es Síncrono=API-Webservice;Patrón Integración Composición=Integración;Patrón Integración Orquestación=Integración;Patrón Integración Transformación=Integración;Patrón Integración Enrutamiento=Integración;Patrón Integración Adaptador-Conector=Integración;Patrón Integración Validación=Integración;Patrón Integración Enriquecimiento=Integración;Patrón Integración Batch Processing=Integración;Patrón Seguridad Gateway=Servicio de Seguridad;Patrón Seguridad Wrapper Seguro=Servicio de Seguridad;Patrón Seguridad Pass Through Seguro=Servicio de Seguridad;Patrón Seguridad Terminación TLS-mTLS=Servicio de Seguridad;Dominio=Servicio de Seguridad;Patrón Colas Punto a Punto=Servicio de Colas;Patrón Colas Publicador-Suscriptor=Servicio de Colas;Patrón Colas Request-Reply=Servicio de Colas;Patrón Colas Dead Letter Queue=Servicio de Colas;Patrón Colas Backout Queue=Servicio de Colas;Patrón Colas Priorización Mensajes=Servicio de Colas;Es Persistente=Servicio de Colas;Patrón STA MFT=Servicio Transferencia de Archivos;Patrón STA Intercambio Seguro Archivos=Servicio Transferencia de Archivos;Patrón STA Transferencia Programada=Servicio Transferencia de Archivos;Patrón STA Transferencia Basada en Eventos=Servicio Transferencia de Archivos;Patrón STA Automatización de Flujos de Archivos=Servicio Transferencia de Archivos;Patrón STA File Pickup / File Drop=Servicio Transferencia de Archivos;Patrón STA Distribución Multidestino=Servicio Transferencia de Archivos;Patrón STA Consolidación de Archivos=Servicio Transferencia de Archivos;Patrón STA Cifrado y Decifrado de Archivos=Servicio Transferencia de Archivos;Patrón STA Compresión y Descompresión=Servicio Transferencia de Archivos;Patrón STA Intercambio B2B de Archivos=Servicio Transferencia de Archivos;"/>
 						<Property name="_tagGroups" value="API-Webservice,Integración,Servicio de Seguridad,Servicio de Colas,Servicio Transferencia de Archivos"/>
 						<Property name="isIndirectlyInstantiated" value="true"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Dominio" type="" description="" unit="" values="" default=""/>
-					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
 					<Tag name="Es Persistente" type="" description="" unit="" values="" default=""/>
 					<Tag name="Es Síncrono" type="" description="" unit="" values="" default=""/>
-					<Tag name="ID" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Backout Queue" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Dead Letter Queue" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Priorización Mensajes" type="" description="" unit="" values="" default=""/>
@@ -1591,6 +1587,8 @@ wMDAwMDAwMDAwMDA
 					<Tag name="Patrón STA Transferencia Programada" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Wrapper" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Interfaz de Integración" type="" description="" unit="" values="" default=""/>
+					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" instanceType="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
@@ -1626,7 +1624,7 @@ wMDAwMDAwMDAwMDA
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Motor base de datos" metatype="Motor base de datos" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Motor base de datos" metatype="Motor base de datos" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -1990,14 +1988,17 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>
@@ -2006,25 +2007,25 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="ACH::Servidor(UML::Class)" type="" description="" unit="" values="" default="Servidor"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Negocio" notes="" cx="272" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Negocio" notes="" cx="348" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente Actor(ACH::Class)" type="" description="" unit="" values="" default="Componente Actor"/>
-					<Tag name="ACH::Componente Interno(ACH::Class)" type="" description="" unit="" values="" default="Componente Interno"/>
-					<Tag name="ACH::Componente(UML::Class)" type="" description="" unit="" values="" default="Componente"/>
+					<Tag name="ACH::Componente de Negocio de Actor(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio de Actor"/>
+					<Tag name="ACH::Componente de Negocio Interno(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio Interno"/>
+					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
-					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
-					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
-					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
 					<Tag name="ACH::Servicio(UML::Activity)" type="" description="" unit="" values="" default="Servicio"/>
+					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Tercero(UML::Class)" type="" description="" unit="" values="" default="Tercero"/>
+					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
+					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
+					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Conectores" notes="" cx="219" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -2069,14 +2070,17 @@ AAEAPgAAAAICAAAAAA==
 	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Capa de Infraestructura" notes="Alias=Capa de Infraestructura;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>

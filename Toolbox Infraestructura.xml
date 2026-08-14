@@ -3,14 +3,17 @@
 	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Capa de Infraestructura" notes="Alias=Capa de Infraestructura;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>

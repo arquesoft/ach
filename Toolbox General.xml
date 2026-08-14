@@ -15,14 +15,17 @@
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>
@@ -31,25 +34,25 @@
 					<Tag name="ACH::Servidor(UML::Class)" type="" description="" unit="" values="" default="Servidor"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Negocio" notes="" cx="272" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Capa de Negocio" notes="" cx="348" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente Actor(ACH::Class)" type="" description="" unit="" values="" default="Componente Actor"/>
-					<Tag name="ACH::Componente Interno(ACH::Class)" type="" description="" unit="" values="" default="Componente Interno"/>
-					<Tag name="ACH::Componente(UML::Class)" type="" description="" unit="" values="" default="Componente"/>
+					<Tag name="ACH::Componente de Negocio de Actor(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio de Actor"/>
+					<Tag name="ACH::Componente de Negocio Interno(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio Interno"/>
+					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
-					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
-					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
-					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
 					<Tag name="ACH::Servicio(UML::Activity)" type="" description="" unit="" values="" default="Servicio"/>
+					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Tercero(UML::Class)" type="" description="" unit="" values="" default="Tercero"/>
+					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
+					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
+					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Conectores" notes="" cx="219" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
