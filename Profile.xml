@@ -3,8 +3,8 @@
 	<Documentation id="7D149D7EF9" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="ACH::Componente" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
-			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="ACH::Componente de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
+			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
 				<AppliesTo>
 					<Apply type="Boundary"/>
 				</AppliesTo>
@@ -161,9 +161,7 @@ I6I9alBLBQYAAAAAAQABAD4AAACWAgAAAAA=
 			</Stereotype>
 			<Stereotype name="Canal" metatype="Canal" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessInterface" baseStereotypes="ArchiMate3::ArchiMate_BusinessInterface">
 				<AppliesTo>
-					<Apply type="Class">
-						<Property name="isActive" value=""/>
-					</Apply>
+					<Apply type="Interface"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ID" type="" description="" unit="" values="" default=""/>
@@ -267,21 +265,21 @@ SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 					<Tag name="Tipo Cliente" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Componente" metatype="Componente" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
+			<Stereotype name="Componente de Actor de Negocio" metatype="Componente de Actor de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Componente Actor" metatype="Componente Actor" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente" baseStereotypes="ACH::Componente">
+			<Stereotype name="Componente de Negocio" metatype="Componente de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Componente Interno" metatype="Componente Interno" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente" baseStereotypes="ACH::Componente">
+			<Stereotype name="Componente Interno de Negocio" metatype="Componente Interno de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
@@ -311,14 +309,35 @@ wMDAwMDAwMDAwMDA
 </Icon>
 				<AppliesTo>
 					<Apply type="Package">
+						<Property name="_tagGroupings" value="Arquitecto de la Solución=Asignación de Recursos;Ingeniero de Aplicaciones=Asignación de Recursos;Líder de Equipo=Asignación de Recursos;Líder de Seguridad=Asignación de Recursos;Líder Técnico=Asignación de Recursos;Product Owner=Asignación de Recursos;Arquitecto de Software=Asignación de Recursos;Arquitecto de Integración=Asignación de Recursos;Arquitecto de Seguridad=Asignación de Recursos;Arquitecto de Infraestructura=Asignación de Recursos;Arquitecto de Datos=Asignación de Recursos;DBA=Asignación de Recursos;Arquitecto de Comunicaciones=Asignación de Recursos;Arquitecto Devops=Asignación de Recursos;Diseño Devops=Estados Documentación Dominios;Diseño Comunicaciones=Estados Documentación Dominios;Diseño Base de Datos=Estados Documentación Dominios;Diseño Información=Estados Documentación Dominios;Diseño Infraestructura=Estados Documentación Dominios;Diseño de Seguridad Informática=Estados Documentación Dominios;Diseño Arquitectura Aplicación=Estados Documentación Dominios;Diseño Integración=Estados Documentación Dominios;Fecha de creación=Fechas;Fecha de presentación=Fechas;Fecha de aprobación=Fechas;"/>
+						<Property name="_tagGroups" value="Asignación de Recursos,Estados Documentación Dominios,Fechas"/>
 						<Property name="URI" value=""/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Aplicación Relacionada" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto de Comunicaciones" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto de Datos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto de Infraestructura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto de Integración" type="" description="" unit="" values="" default=""/>
 					<Tag name="Arquitecto de la Solución" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto de Seguridad" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto de Software" type="" description="" unit="" values="" default=""/>
+					<Tag name="Arquitecto Devops" type="" description="" unit="" values="" default=""/>
+					<Tag name="DBA" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño Arquitectura Aplicación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño Base de Datos" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño Comunicaciones" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño de Seguridad Informática" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño Devops" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño Información" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño Infraestructura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Diseño Integración" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Estado Concepto de Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha de aprobación" type="" description="" unit="" values="" default=""/>
 					<Tag name="Fecha de creación" type="" description="" unit="" values="" default=""/>
+					<Tag name="Fecha de presentación" type="" description="" unit="" values="" default=""/>
 					<Tag name="Ingeniero de Aplicaciones" type="" description="" unit="" values="" default=""/>
 					<Tag name="Innovación o Mantenimiento" type="" description="" unit="" values="" default=""/>
 					<Tag name="Líder de Equipo" type="" description="" unit="" values="" default=""/>
@@ -461,7 +480,7 @@ wMDAwMDAwMDAwMDA
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Motor base de datos" metatype="Motor base de datos" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Motor base de datos" metatype="Motor base de datos" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
