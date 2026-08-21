@@ -1,9 +1,9 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <UMLProfile profiletype="uml2">
-	<Documentation id="361438F64E" name="ACH_Capa_de_Seguridad" version="1.0" alias="Capa de Seguridad" notes="Alias=Capa de Seguridad;"/>
+	<Documentation id="361438F64E" name="ACH_Capa_de_Seguridad" version="1.0" alias="Vista de Seguridad" notes="Alias=Vista de Seguridad;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -20,6 +20,21 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
+					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
+					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
+					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
+					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
+					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>

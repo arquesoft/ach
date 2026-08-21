@@ -1,16 +1,19 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <UMLProfile profiletype="uml2">
-	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Capa de Infraestructura" notes="Alias=Capa de Infraestructura;"/>
+	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Vista de Infraestructura" notes="Alias=Vista de Infraestructura;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>
@@ -26,6 +29,117 @@
 				<TaggedValues>
 					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
 					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="ACH AWS" notes="" cx="378" cy="855" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="AWS_Arquesoft::AWS ACM Certificate(UML::Requirement)" type="" description="" unit="" values="" default="ACM Certificate"/>
+					<Tag name="AWS_Arquesoft::AWS API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS Aurora Database(UML::Requirement)" type="" description="" unit="" values="" default="Aurora Database"/>
+					<Tag name="AWS_Arquesoft::AWS Auto Scaling Group(UML::Requirement)" type="" description="" unit="" values="" default="Auto Scaling Group"/>
+					<Tag name="AWS_Arquesoft::AWS-AZ(UML::Requirement)" type="" description="" unit="" values="" default="Availability Zone"/>
+					<Tag name="AWS_Arquesoft::AWS Account(UML::Requirement)" type="" description="" unit="" values="" default="AWS Account"/>
+					<Tag name="AWS_Arquesoft::AWS CloudFront Distribution(UML::Requirement)" type="" description="" unit="" values="" default="CloudFront Distribution"/>
+					<Tag name="AWS_Arquesoft::AWS CloudTrail(UML::Requirement)" type="" description="" unit="" values="" default="CloudTrail"/>
+					<Tag name="AWS_Arquesoft::AWS CodeBuild Project(UML::Requirement)" type="" description="" unit="" values="" default="CodeBuild Project"/>
+					<Tag name="AWS_Arquesoft::AWS Cognito(UML::Requirement)" type="" description="" unit="" values="" default="Cognito"/>
+					<Tag name="AWS_Arquesoft::AWS Customer Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Customer Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS DynamoDB Table(UML::Requirement)" type="" description="" unit="" values="" default="DynamoDB Table"/>
+					<Tag name="AWS_Arquesoft::AWS EC2 Fleet(UML::Requirement)" type="" description="" unit="" values="" default="EC2 Fleet"/>
+					<Tag name="AWS_Arquesoft::AWS EC2 Instance(UML::Requirement)" type="" description="" unit="" values="" default="EC2 Instance"/>
+					<Tag name="AWS_Arquesoft::AWS ECR Repository(UML::Requirement)" type="" description="" unit="" values="" default="ECR Repository"/>
+					<Tag name="AWS_Arquesoft::AWS ECS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="ECS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS EFS Access Point(UML::Requirement)" type="" description="" unit="" values="" default="EFS Access Point"/>
+					<Tag name="AWS_Arquesoft::AWS EFS Filesystem(UML::Requirement)" type="" description="" unit="" values="" default="EFS Filesystem"/>
+					<Tag name="AWS_Arquesoft::AWS EKS(UML::Requirement)" type="" description="" unit="" values="" default="EKS"/>
+					<Tag name="AWS_Arquesoft::AWS EKS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="EKS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS EKS Container(UML::Requirement)" type="" description="" unit="" values="" default="EKS Container"/>
+					<Tag name="AWS_Arquesoft::AWS Elastic IP Address(UML::Requirement)" type="" description="" unit="" values="" default="Elastic IP Address"/>
+					<Tag name="AWS_Arquesoft::AWS Event Bridge(UML::Requirement)" type="" description="" unit="" values="" default="Event Bridge"/>
+					<Tag name="AWS_Arquesoft::AWS Event Bus(UML::Requirement)" type="" description="" unit="" values="" default="Event Bus"/>
+					<Tag name="AWS_Arquesoft::AWS Event Rule(UML::Requirement)" type="" description="" unit="" values="" default="Event Rule"/>
+					<Tag name="AWS_Arquesoft::AWS Glue Job(UML::Requirement)" type="" description="" unit="" values="" default="Glue Job"/>
+					<Tag name="AWS_Arquesoft::AWS GraphQL API(UML::Requirement)" type="" description="" unit="" values="" default="GraphQL API"/>
+					<Tag name="AWS_Arquesoft::AWS Hosted Zone(UML::Requirement)" type="" description="" unit="" values="" default="Hosted Zone"/>
+					<Tag name="AWS_Arquesoft::AWS IAM User(UML::Requirement)" type="" description="" unit="" values="" default="IAM User"/>
+					<Tag name="AWS_Arquesoft::AWS Internet Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Internet Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS KMS Key(UML::Requirement)" type="" description="" unit="" values="" default="KMS Key"/>
+					<Tag name="AWS_Arquesoft::AWS Lambda Function(UML::Requirement)" type="" description="" unit="" values="" default="Lambda Function"/>
+					<Tag name="AWS_Arquesoft::AWS Load Balancer(UML::Requirement)" type="" description="" unit="" values="" default="Load Balancer"/>
+					<Tag name="AWS_Arquesoft::AWS Namespace(UML::Requirement)" type="" description="" unit="" values="" default="Namespace"/>
+					<Tag name="AWS_Arquesoft::AWS NAT Gateway(UML::Requirement)" type="" description="" unit="" values="" default="NAT Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS Network Interface(UML::Requirement)" type="" description="" unit="" values="" default="Network Interface"/>
+					<Tag name="AWS_Arquesoft::AWS Pod(UML::Requirement)" type="" description="" unit="" values="" default="Pod"/>
+					<Tag name="AWS_Arquesoft::AWS PostgreSQL Instance(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL Instance"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="RDS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS RestApi(UML::Requirement)" type="" description="" unit="" values="" default="Rest API"/>
+					<Tag name="AWS_Arquesoft::AWS VPN(UML::Requirement)" type="" description="" unit="" values="" default="VPN"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Instance(UML::Requirement)" type="" description="" unit="" values="" default="RDS Instance"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="RDS Security Group"/>
+					<Tag name="AWS_Arquesoft::AWS-Region(UML::Requirement)" type="" description="" unit="" values="" default="Region"/>
+					<Tag name="AWS_Arquesoft::AWS Route Table(UML::Requirement)" type="" description="" unit="" values="" default="Route Table"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Bucket(UML::Requirement)" type="" description="" unit="" values="" default="S3 Bucket"/>
+					<Tag name="AWS_Arquesoft::AWS Secret(UML::Requirement)" type="" description="" unit="" values="" default="Secret"/>
+					<Tag name="AWS_Arquesoft::AWS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Security Group"/>
+					<Tag name="AWS_Arquesoft::AWS SNS Topic(UML::Requirement)" type="" description="" unit="" values="" default="SNS Topic"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Access Point(UML::Requirement)" type="" description="" unit="" values="" default="S3 Access Point"/>
+					<Tag name="AWS_Arquesoft::AWS SQS Queue(UML::Requirement)" type="" description="" unit="" values="" default="SQS Queue"/>
+					<Tag name="AWS_Arquesoft::AWS Statemachine(UML::Requirement)" type="" description="" unit="" values="" default="Statemachine"/>
+					<Tag name="AWS_Arquesoft::AWS Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
+					<Tag name="AWS_Arquesoft::AWS Task(UML::Requirement)" type="" description="" unit="" values="" default="Task"/>
+					<Tag name="AWS_Arquesoft::AWS Transit Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Transit Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS UserPool(UML::Requirement)" type="" description="" unit="" values="" default="User Pool"/>
+					<Tag name="AWS_Arquesoft::AWS Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
+					<Tag name="AWS_Arquesoft::AWS VPC(UML::Requirement)" type="" description="" unit="" values="" default="VPC"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint Service(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint Service"/>
+					<Tag name="AWS_Arquesoft::AWS WAF(UML::Requirement)" type="" description="" unit="" values="" default="WAF"/>
+					<Tag name="AWS_Arquesoft::AWS WebACL(UML::Requirement)" type="" description="" unit="" values="" default="Web ACL"/>
+					<Tag name="AWS_Arquesoft::AWS WorkGroup(UML::Requirement)" type="" description="" unit="" values="" default="WorkGroup"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="ACH OCI" notes="" cx="382" cy="478" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="OCI_Arquesoft::OCI API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
+					<Tag name="OCI_Arquesoft::OCI Autonomous Database(UML::Requirement)" type="" description="" unit="" values="" default="Autonomous Database"/>
+					<Tag name="OCI_Arquesoft::OCI Availability Domain(UML::Requirement)" type="" description="" unit="" values="" default="Availability Domain"/>
+					<Tag name="OCI_Arquesoft::OCI Boot Volume(UML::Requirement)" type="" description="" unit="" values="" default="Boot Volume"/>
+					<Tag name="OCI_Arquesoft::OCI Bucket(UML::Requirement)" type="" description="" unit="" values="" default="Bucket"/>
+					<Tag name="OCI_Arquesoft::OCI Cluster(UML::Requirement)" type="" description="" unit="" values="" default="Cluster"/>
+					<Tag name="OCI_Arquesoft::OCI Compartment(UML::Requirement)" type="" description="" unit="" values="" default="Compartment"/>
+					<Tag name="OCI_Arquesoft::OCI DB System(UML::Requirement)" type="" description="" unit="" values="" default="DB System"/>
+					<Tag name="OCI_Arquesoft::OCI DNS Zone(UML::Requirement)" type="" description="" unit="" values="" default="DNS Zone"/>
+					<Tag name="OCI_Arquesoft::OCI DRG(UML::Requirement)" type="" description="" unit="" values="" default="DRG"/>
+					<Tag name="OCI_Arquesoft::OCI File System(UML::Requirement)" type="" description="" unit="" values="" default="File System"/>
+					<Tag name="OCI_Arquesoft::OCI Firewall(UML::Requirement)" type="" description="" unit="" values="" default="Firewall"/>
+					<Tag name="OCI_Arquesoft::OCI Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Gateway"/>
+					<Tag name="OCI_Arquesoft::OCI Image(UML::Requirement)" type="" description="" unit="" values="" default="Image"/>
+					<Tag name="OCI_Arquesoft::OCI Instance Pool(UML::Requirement)" type="" description="" unit="" values="" default="Instance Pool"/>
+					<Tag name="OCI_Arquesoft::OCI Instance(UML::Requirement)" type="" description="" unit="" values="" default="Instance"/>
+					<Tag name="OCI_Arquesoft::OCI IP Sec Connection(UML::Requirement)" type="" description="" unit="" values="" default="IP Sec Connection"/>
+					<Tag name="OCI_Arquesoft::OCI Load Balancer(UML::Requirement)" type="" description="" unit="" values="" default="Load Balancer"/>
+					<Tag name="OCI_Arquesoft::OCI Network Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Network Security Group"/>
+					<Tag name="OCI_Arquesoft::OCI No SQL Table(UML::Requirement)" type="" description="" unit="" values="" default="No SQL Table"/>
+					<Tag name="OCI_Arquesoft::OCI Node Pool(UML::Requirement)" type="" description="" unit="" values="" default="Node Pool"/>
+					<Tag name="OCI_Arquesoft::OCI Private IP(UML::Requirement)" type="" description="" unit="" values="" default="Private IP"/>
+					<Tag name="OCI_Arquesoft::OCI Public IP(UML::Requirement)" type="" description="" unit="" values="" default="Public IP"/>
+					<Tag name="OCI_Arquesoft::OCI Queue(UML::Requirement)" type="" description="" unit="" values="" default="Queue"/>
+					<Tag name="OCI_Arquesoft::OCI SDDCS(UML::Requirement)" type="" description="" unit="" values="" default="SDDCS"/>
+					<Tag name="OCI_Arquesoft::OCI Security List(UML::Requirement)" type="" description="" unit="" values="" default="Security List"/>
+					<Tag name="OCI_Arquesoft::OCI Stream(UML::Requirement)" type="" description="" unit="" values="" default="Stream"/>
+					<Tag name="OCI_Arquesoft::OCI Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
+					<Tag name="OCI_Arquesoft::OCI Vault(UML::Requirement)" type="" description="" unit="" values="" default="Vault"/>
+					<Tag name="OCI_Arquesoft::OCI VCN(UML::Requirement)" type="" description="" unit="" values="" default="VCN"/>
+					<Tag name="OCI_Arquesoft::OCI Virtual Machine(UML::Requirement)" type="" description="" unit="" values="" default="Virtual Machine"/>
+					<Tag name="OCI_Arquesoft::OCI VNIC(UML::Requirement)" type="" description="" unit="" values="" default="VNIC"/>
+					<Tag name="OCI_Arquesoft::OCI Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
+					<Tag name="OCI_Arquesoft::OCI VPN Gateway(UML::Requirement)" type="" description="" unit="" values="" default="VPN Gateway"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>

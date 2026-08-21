@@ -3,26 +3,25 @@
 	<Documentation id="7D149D7EF9" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="ACH::Componente de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
 			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
 				<AppliesTo>
 					<Apply type="Boundary"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Agrupamiento Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="16776883" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
-						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
-						<Property name="_makeComposite" value="True"/>
 						<Property name="isIndirectlyInstantiated" value="true"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
@@ -39,6 +38,7 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Asociación" metatype="Asociación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -52,7 +52,7 @@
 					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Balanceador" metatype="Balanceador" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
+			<Stereotype name="Balanceador" metatype="Balanceador" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -60,6 +60,7 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Base de datos física" metatype="Base de datos física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -108,6 +109,7 @@ oT1qUEsFBgAAAAABAAEAPgAAAJUCAAAAAA==
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Base de datos lógica" metatype="Base de datos lógica" instanceType="Base de datos física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -234,8 +236,8 @@ vb29wMDAwMDAwMDAvb29f4WGQqa1XOH1Xub7T8PVT8PVXub7XOH1Qqa1gIWG
 vb29wMDAwMDAwMDAwMDAwMDAwMDArq6ugYGBW4ePPJWjPJakWYeQgICArq6u
 wMDAwMDAwMDAwMDA
 </Icon>
-				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOCh/lxIeNRw4gIAAPAIAAAHABEAc3RyLmRhdFVUDQAH1LBr
-atSwa2rUsGtqnVbbbhMxEJ1nJP5hlbwsEi1NuQiBeEhDipBKiGglHhBCmwup
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIABRxEl1IeNRw4gIAAPAIAAAHABEAc3RyLmRhdFVUDQAHemeE
+anpnhGp6Z4RqnVbbbhMxEJ1nJP5hlbwsEi1NuQiBeEhDipBKiGglHhBCmwup
 UbOEzbaqQHwRn8DX5AP4B86Zsdk7oMqK1x57PGfOjMfZyrkkspGlRLLGyEmK
 0Te5LbfwtXYPLZKB7KN/jp0fdZeTDPO5fJYL/DLIt5jHOIPnZFi/0JUIp+8w
 crLQ2RzjHfY61Y0gpe0hNObA4uQVtHPI7lQwnEKSy7E/dfTHaiyH8hDtLvYU
@@ -251,8 +253,8 @@ URKpH4zZRiPyVeWWm5H88tlHVMwo6l/pjEiL+ui0uqwUM9G027R3hKfVGW17
 xabCm08d0w+4eJJZJdv0ksxyzurE2kGuDR1x0D/GhztimegKX4U9RJsZmdfy
 j+sBWxm91YQJtOq1oIl9pGhXHnOTI0O29S+qrZMRqxAZeKfEVqm383r2cpt8
 jOxpWn6JV3kqr/HqMLsm6MfIsO46NNMR4xJeNdafwF2EfxDkg8jJ9zW+9pbt
-V2wXvjG3+b8hMLgnjzQrN8Jbby/Cv14/y+zfUEsBAhcLFAAAAAgA4KH+XEh4
-1HDiAgAA8AgAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB9Swa2pQ
+V2wXvjG3+b8hMLgnjzQrN8Jbby/Cv14/y+zfUEsBAhcLFAAAAAgAFHESXUh4
+1HDiAgAA8AgAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB3pnhGpQ
 SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 </Image>
 				<AppliesTo>
@@ -265,26 +267,16 @@ SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 					<Tag name="Tipo Cliente" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Componente de Actor de Negocio" metatype="Componente de Actor de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
-				<AppliesTo>
-					<Apply type="Component">
-						<Property name="isIndirectlyInstantiated" value="true"/>
-					</Apply>
-				</AppliesTo>
-			</Stereotype>
 			<Stereotype name="Componente de Negocio" metatype="Componente de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
-			</Stereotype>
-			<Stereotype name="Componente Interno de Negocio" metatype="Componente Interno de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
-				<AppliesTo>
-					<Apply type="Component">
-						<Property name="isIndirectlyInstantiated" value="true"/>
-					</Apply>
-				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo Componente de Negocio" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Contenido" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Concepto de Arquitectura" metatype="Concepto de Arquitectura" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
@@ -362,13 +354,14 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Elemento Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Entorno Ejecucion Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -378,39 +371,88 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" instanceType="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
+			<Stereotype name="Estructura de Negocio" metatype="Estructura de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5rMa5bgf5bgf57YgAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA660z56045q0356035qw4
+5q04AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5qVS5qJR5aFR56NQ5aJR
+56NQ5aFR5aFTAAAAAAAAAAAAAAAAAAAAAAAAAAAA6phn6Jdq1apV6Zhr6Jhp
+55dr55dr55hr6Jdq6phnAAAAAAAAAAAA/4CA54uD6IyC6YyB/6qqAAAAAAAA
+64mA6Y2D6YyB74+A/6qq6YyC6IyC54uD/4CA6IGc6YCd6YGb/4CAAAAA/5mZ
+6ICb6ICX6YGb74CfAAAAAAAA/4CA6YGb6YCd6IGc6XazAAAA6Xez7ne7AAAA
+6nW16HWz6Xaz6Xa11YCqAAAAAAAA7ne76XezAAAA6Xaz3W7DAAAA3m3D3m7E
+AAAAzGbM3m3E1Wq/4W3C3m/CAAAAAAAA3m7E3m3DAAAA3W7DyWrLAAAA/wD/
+ymnKy2nLy2nLymrKy2vLy2rLyWrLy2nLy2nLymnK/wD/AAAAyWrLtWbRAAAA
+s2jQtmbTuGXStmXTtGLStWfRtmPQuWTRt2XSuGXStmbTs2jQAAAAtWbRoGHZ
+oWDZoWHZoV7ZAAAAoWDaAAAAomHYoGDYAAAAol/YAAAAoV7ZoWHZoWDZoGHZ
+AAAAAAAAAAAAAAAAAAAAjFvgAAAAjVrgi13gAAAAjVrgAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAeFbne1jlelfmeFXmeFjneVbmAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAYGDfY1HvZFHuY1LtZFLvbUn/AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAA
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAE53El1PtkrtZgMAABAKAAAHABEAc3RyLmRhdFVUDQAHL3OE
+ai9zhGovc4RqfZbdThRBEIXrVhLfYbPcQKIoaLzQeIEC0UTBiBd4ZfaPZXRh
+15kFQePD8gC8g+ermnZ2ZmfJZv66u6pOnTpdvYWdWc9mNrKOnestswu9/bGH
+tmYPyvuFTa3wdUO9/dL8a11zy+1Sdq9qa5/o17Ft29L9QKtz+y27XF+X7nms
+d7xxdWRdyM+tZoblqqEjmdidxkYa69iGvHWEMLNrjUxss4xU6GvuyC+EKZPl
+XBhZvdmKaccx7Wn9qWeZLaAaCM/E0QYmvA6EgZXMgeJQY4F+0/HE6kIrOsI5
+0EVWy9gq3xv21B5pdbq34wzumjjJHM4zj9zO057t2rG9s329RY1yzdw4MiLu
+2ZF90a+an3n+c69GndeJx4763OhrJP9drxJK6K7AnjjOrC/P3x1XIIefc/cJ
+elhr8h4Z5b6eeLFyw3XW0xdVQSPMzHVPeIkMSubgvFfqoEIY2BZREQ9Pg1J9
+Y42DIxCBjMx/ahSc5Bzr0T9ahfHgAoQnzu5Xv5+ofvEVT5APhGdq3xo+Y3bi
+7DfjpdxQGxUa/kdb19C2ns23nYVnk4OD0j/VZV+2V2e4wBQZVx7gfngPx8dl
+PaM79Gox+l7nqPKNRxnVFEJ06prrLRSxqvL1usPRD422oVrE9sy1+UGxyDU0
+ABOo8VLoosNFJ6QSqSOyC0Izt45p6pxQeTLlCaZrnyk8Yqf8wd5wyTv7qLKI
+rjJVBci621rVZj6LSFd5Sj08YUm/M+kw6j92ndMFurJJ3Ob6imhNy6tWSyLP
+Vtq0jUU1dr0a+84/qjsXR1Q4dMEo95HGA1n0AnZgZuz1vs9W+/VAeo9d04w3
+c0XhY6I77K/7HsDz+lInS1Z/y7EYjS+uxR79xhWQtAJu0KBZ+nTgCuWicrIj
+n5krMJ2KketdmQdZgg37K/9K5ww27BEUOXZOQNMeM84svN2vicjlk6FbbMI+
+4cJTRK33ptgvqK/aqeCIDoUy47Rkhv34WFWmU84b9WE+8zjUs0IfujqUVVNV
+y9jfOtpxiXmZo0BWlF0n5lFwaC0X74zELHa3pR02aXxfWl2O/N4+irkj+6zz
+dFdoOVVf+up2Rff9jbrAIlyj5OrcO3U+QA7f18Y/CnjZqsWuckPH9Og4ScFb
+iOkX9lyVuZbVzDjVop/cd2Ik9YfK1+wfUEsBAhcLFAAAAAgATncSXU+2Su1m
+AwAAEAoAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUABy9zhGpQSwUG
+AAAAAAEAAQA+AAAAnAMAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Boundary"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Ejecutable" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Interfaz de Integración" metatype="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
 				<AppliesTo>
 					<Apply type="Interface">
-						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
-						<Property name="_makeComposite" value="True"/>
 						<Property name="_tagGroupings" value="Patrón Composición=API-Webservice;Patrón Exposición=API-Webservice;Patrón Pass Through=API-Webservice;Patrón Wrapper=API-Webservice;Es Síncrono=API-Webservice;Patrón Integración Composición=Integración;Patrón Integración Orquestación=Integración;Patrón Integración Transformación=Integración;Patrón Integración Enrutamiento=Integración;Patrón Integración Adaptador-Conector=Integración;Patrón Integración Validación=Integración;Patrón Integración Enriquecimiento=Integración;Patrón Integración Batch Processing=Integración;Patrón Seguridad Gateway=Servicio de Seguridad;Patrón Seguridad Wrapper Seguro=Servicio de Seguridad;Patrón Seguridad Pass Through Seguro=Servicio de Seguridad;Patrón Seguridad Terminación TLS-mTLS=Servicio de Seguridad;Dominio=Servicio de Seguridad;Patrón Colas Punto a Punto=Servicio de Colas;Patrón Colas Publicador-Suscriptor=Servicio de Colas;Patrón Colas Request-Reply=Servicio de Colas;Patrón Colas Dead Letter Queue=Servicio de Colas;Patrón Colas Backout Queue=Servicio de Colas;Patrón Colas Priorización Mensajes=Servicio de Colas;Es Persistente=Servicio de Colas;Patrón STA MFT=Servicio Transferencia de Archivos;Patrón STA Intercambio Seguro Archivos=Servicio Transferencia de Archivos;Patrón STA Transferencia Programada=Servicio Transferencia de Archivos;Patrón STA Transferencia Basada en Eventos=Servicio Transferencia de Archivos;Patrón STA Automatización de Flujos de Archivos=Servicio Transferencia de Archivos;Patrón STA File Pickup / File Drop=Servicio Transferencia de Archivos;Patrón STA Distribución Multidestino=Servicio Transferencia de Archivos;Patrón STA Consolidación de Archivos=Servicio Transferencia de Archivos;Patrón STA Cifrado y Decifrado de Archivos=Servicio Transferencia de Archivos;Patrón STA Compresión y Descompresión=Servicio Transferencia de Archivos;Patrón STA Intercambio B2B de Archivos=Servicio Transferencia de Archivos;"/>
 						<Property name="_tagGroups" value="API-Webservice,Integración,Servicio de Seguridad,Servicio de Colas,Servicio Transferencia de Archivos"/>
 						<Property name="isIndirectlyInstantiated" value="true"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Dominio" type="" description="" unit="" values="" default=""/>
-					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
 					<Tag name="Es Persistente" type="" description="" unit="" values="" default=""/>
 					<Tag name="Es Síncrono" type="" description="" unit="" values="" default=""/>
-					<Tag name="ID" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Backout Queue" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Dead Letter Queue" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Priorización Mensajes" type="" description="" unit="" values="" default=""/>
@@ -445,14 +487,17 @@ wMDAwMDAwMDAwMDA
 					<Tag name="Patrón STA Transferencia Programada" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Wrapper" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Interfaz de Integración" type="" description="" unit="" values="" default=""/>
+					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" instanceType="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
+			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
 				<AppliesTo>
 					<Apply type="Interface"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Herramienta Integración" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otra Herramienta Integración" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -470,7 +515,7 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Middleware" metatype="Middleware" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Middleware" metatype="Middleware" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -478,9 +523,10 @@ wMDAwMDAwMDAwMDA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Motor base de datos" metatype="Motor base de datos" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Motor base de datos" metatype="Motor base de datos" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -488,6 +534,65 @@ wMDAwMDAwMDAwMDA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Negocio" metatype="Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKjM+HSQrIScuAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKMDpHYneQX3ONLjdD
+JSw1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA8PND9MZXqUYHSNRVNl
+YHSNLzdDBQUKAAAAAAAAAAAAAAAAAAAAAAAAAAAAExMTOEJRoMHqeJCvSFdp
+YHSNYHSNN0NRND9MDRMTAAAAAAAAAAAAAAAAEg4EFxILO0hXosTtpMbwpMbw
+k7LYYnaPN0RSj63Sl7fdOkZUCw0dBAQWAAAAIxgJkl4gPDImo8TupMbwocLr
+eZOxlrXbOENQj63SmbngmbngmLjeICRJLjCoCgwqKBoIzIUtZUgimrripMbw
+do2sVml+N0JQU2R5lbXbmbngmbngkK7TJil2P0LrDQ0uKBoIzIUtpm0lb3+T
+pMbwocLrQ1FjkrDVgJu7fZi4mbngmbngYHSVMzW+P0LrDQ0uKBoIzIUty4Qt
+R0RAeJGweJGwPltuJ1dpLGF2Q2N4cIikcIikLjZZP0LqP0LrDQ0uKBoIzIUt
+tncoKBoJAAAABxYcMrbdKpe3L6rOMrfeBxgcAAAADQ0vODvSP0LrDQ0uIRUH
+PyoOJhkKAAAAAAAAFk1cOtP/K5y9GVtuOtP/FlBhAAAAAAAADAwsFBVJCwsn
+AAAAAAAAAAAAAAAAAAAAFlFhOtP/GVlsK5y9OtP/F1FiAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAADS01M7riL6rNKpe3M7jfDSw2AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSs1Fk9gFlFhDSw1AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAA
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAHpxEl1bqJAzowIAAIYHAAAHABEAc3RyLmRhdFVUDQAHEWiE
+ahFohGoRaIRqhVXbbtNAEJ3XIvEPVvLiSjQl5SIBBSlAKiGVUCHekXMh3ap1
+XduUtqgfmw/oP3DOjBfHXhu0ynp2dud25uymkFNJJJOVRHIByUkK6bc8lkf4
+2tjHiGQsI8wfcfKHnnKSY72QSznHL4e+wDqGD/rJsX+uOxG8byA5WepqAXmD
+s05tI2gZewKLBXJx8hnWJXS7jRwKaEqNTK911FgO5AXGE5yppbG8wmpX3kAO
+vbDatOHjqVr5mXZ9Vr+0jhKZxojSPhmidlCh5mQuP+VMkYkQNxEikaiGCBEv
+5uQgJ9g3XPidQFtqntveiTf1CazWOLdqVTHGd1sKsQhzfaa5Hmt21sOoyqVA
+7nPMNVeuoPGcSSFZZRtomCs7TTYQX37ZzxvdKRpxE5xcBt5jGTQsZpDXkIjO
+Jfb66uurbjvvfr9t1vtxKt8VBYezvBtv8RvAhmygtxyrZmw/rjstGTvrtenS
+WXcm2p2p9iOFjwtgRhbUTOG8gt4yY0Ux5CXikydz3bUby2yO9IZ0xfNsLGGR
+ajcOMYZAzOpdwUMpt4roUN5hDP7iv4MR2g/xJad4vj7bjrutu9eVzfwZBs8V
+g/fKK89AVs+acuG7wU6yOt4iauymEJVMeX1X8doQe6jQIFbMkPbXusrUo7+p
+Tnm+VmSZTXdMe9Ho7d/MslpOhBykjdn7vOjJovJFZZXEkmveE2JOdC075mEv
+ARnOfs90h+/THriSaM+aXea+0zhkRZ29sXMGqzY3w9w/aLbrKucQI8usqN52
+2+c9MMbmwJ0a26XdprKz/xDTT8H4MPIn/D+cyBf5Kt+wP8M8ldd6uvtezFVi
+X/z7yvvgsYvwj0I8mDnxvsHXXtVRI3ZdG9nMl5yds3wLIP0SzMxgPcLM99je
+qP+9x57b9/IHUEsBAhcLFAAAAAgAenESXVuokDOjAgAAhgcAAAcACQAAAAAA
+AAAAAACAAAAAAHN0ci5kYXRVVAUABxFohGpQSwUGAAAAAAEAAQA+AAAA2QIA
+AAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Objeto de Negocio" metatype="Objeto de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessObject" baseStereotypes="ArchiMate3::ArchiMate_BusinessObject">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Valor" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Producto" metatype="Producto" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Product" baseStereotypes="ArchiMate3::ArchiMate_Product">
@@ -615,6 +720,7 @@ AAA=
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Servidor" metatype="Servidor" notes="" cx="0" cy="0" bgcolor="12648384" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Node" baseStereotypes="ArchiMate3::ArchiMate_Node">
@@ -632,6 +738,7 @@ AAA=
 					<Tag name="Función" type="" description="" unit="" values="" default=""/>
 					<Tag name="Gerencia" type="" description="" unit="" values="" default=""/>
 					<Tag name="Hostname" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="IP Principal" type="" description="" unit="" values="" default=""/>
 					<Tag name="Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Rol Servidor" type="" description="" unit="" values="" default=""/>
@@ -685,6 +792,19 @@ AAEAPgAAAAICAAAAAA==
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Tipo Canal" metatype="Tipo Canal" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIACytE10+AIjbdQEAAA4HAAAHABEAc3RyLmRhdFVUDQAHIiOG
+aiIjhmoiI4ZqxVRNS8NAEH1nwf+wRIQWROtV8RAaUMFeSu4Sm7QNtGtJ2iBK
+f7In/4BvJglN6h60RMqwm5mdzzez2RxzRFghgcGSXAqLU5zgQ3dT0RKvKGiz
+5reHAS54NkAfty2rhXrXVte02LdsWl+RDJ7oFWlmw7XgnmODF+67uiaMZzFl
+9Bl1Gc9jnhhqI5UMpQk1pWzoI3HK/OfkYo0ieWT/1BqjVi0SMf6RuQePWBK8
+KaIhOUsuI+8prh3CknOhbOJwx2pat7te0xzP2hvBbynfcXlEXMZIGMXbm0RN
+xa89Xd4pe27YhQfGyBFyn2lPQmpWOoEhz6xmKDviwadGUBW0yblkcjLftMop
+veuTXPnc6GuSuHK/1lqDj0ucsRIf97jBIwJKEtndh63zVO5JrpM5BOlY/SN2
+8/9Qjo+OMtA5yk1N+W9sFO0XbbrBFxwd30hnJ29Wivdqmt3hGx0dX6gvpKX9
+lBaZvrTdYgw7xOjS/aWWQ+sopS2+AVBLAQIXCxQAAAAIACytE10+AIjbdQEA
+AA4HAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAciI4ZqUEsFBgAA
+AAABAAEAPgAAAKsBAAAAAA==
+</Image>
 				<AppliesTo>
 					<Apply type="Association">
 						<Property name="compositionKind" value="none"/>

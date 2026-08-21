@@ -1,15 +1,17 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <UMLProfile profiletype="uml2">
-	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Capa de Aplicaciones" notes="Alias=Capa de Aplicaciones;"/>
+	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Vista Lógica de Aplicaciones" notes="Alias=Vista Lógica de Aplicaciones;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Aplicaciones" notes="" cx="281" cy="101" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
 					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
 					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
 					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>

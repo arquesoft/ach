@@ -1,8 +1,8 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <MDG.Technology version="1.0"><Documentation id="ACHMDG" name="ACH" version="1.0" notes="MDG Technology for ACH - Developed by Arquesoft" supportURI="support@arquesoft.com"/><Logo><Image type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1ayQAAAAAAAIoAAAB8AAAAzAAAAFQAAAABABgAAAAAANDIAAAjLgAAIy4A
-AAAAAAAAAAAAZQAgAHAAcgBvAGYAaQBsAGUAdAB5AHAAZQA9ACIAdQBtAGwA
-MgAiAD4ADQAKAAkAPABEAG8AYwB1AG0AZQBuAHQAYQB0AGkAbwBuACAAaQBk
-AD0A////////////////////////////////////////////////////////
+AAAAAAAAAAAA+EHgOmMBAAA+AAAAAGVsZWN0aW9ucwAAAABlcy54bWwsVG9v
+bGJveCBEYXRvcy54bWwsVG9vbGJveCBHZW5lcmFsLnhtbCxUb29sYm94IElu
+ZnJh////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 /////////f7//f///f///f7/////////////////////////////////////
 /////////////////////////////////////////////f7/////////////
@@ -1168,26 +1168,25 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 	<Documentation id="7D149D7EF9" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="ACH::Componente de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
 			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
 				<AppliesTo>
 					<Apply type="Boundary"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Agrupamiento Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Aplicación" metatype="Aplicación" notes="" cx="0" cy="0" bgcolor="16776883" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
-						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
-						<Property name="_makeComposite" value="True"/>
 						<Property name="isIndirectlyInstantiated" value="true"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
@@ -1204,6 +1203,7 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Asociación" metatype="Asociación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1217,7 +1217,7 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Balanceador" metatype="Balanceador" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
+			<Stereotype name="Balanceador" metatype="Balanceador" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -1225,6 +1225,7 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Base de datos física" metatype="Base de datos física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1273,6 +1274,7 @@ oT1qUEsFBgAAAAABAAEAPgAAAJUCAAAAAA==
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Base de datos lógica" metatype="Base de datos lógica" instanceType="Base de datos física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1399,8 +1401,8 @@ vb29wMDAwMDAwMDAvb29f4WGQqa1XOH1Xub7T8PVT8PVXub7XOH1Qqa1gIWG
 vb29wMDAwMDAwMDAwMDAwMDAwMDArq6ugYGBW4ePPJWjPJakWYeQgICArq6u
 wMDAwMDAwMDAwMDA
 </Icon>
-				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOCh/lxIeNRw4gIAAPAIAAAHABEAc3RyLmRhdFVUDQAH1LBr
-atSwa2rUsGtqnVbbbhMxEJ1nJP5hlbwsEi1NuQiBeEhDipBKiGglHhBCmwup
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIABRxEl1IeNRw4gIAAPAIAAAHABEAc3RyLmRhdFVUDQAHemeE
+anpnhGp6Z4RqnVbbbhMxEJ1nJP5hlbwsEi1NuQiBeEhDipBKiGglHhBCmwup
 UbOEzbaqQHwRn8DX5AP4B86Zsdk7oMqK1x57PGfOjMfZyrkkspGlRLLGyEmK
 0Te5LbfwtXYPLZKB7KN/jp0fdZeTDPO5fJYL/DLIt5jHOIPnZFi/0JUIp+8w
 crLQ2RzjHfY61Y0gpe0hNObA4uQVtHPI7lQwnEKSy7E/dfTHaiyH8hDtLvYU
@@ -1416,8 +1418,8 @@ URKpH4zZRiPyVeWWm5H88tlHVMwo6l/pjEiL+ui0uqwUM9G027R3hKfVGW17
 xabCm08d0w+4eJJZJdv0ksxyzurE2kGuDR1x0D/GhztimegKX4U9RJsZmdfy
 j+sBWxm91YQJtOq1oIl9pGhXHnOTI0O29S+qrZMRqxAZeKfEVqm383r2cpt8
 jOxpWn6JV3kqr/HqMLsm6MfIsO46NNMR4xJeNdafwF2EfxDkg8jJ9zW+9pbt
-V2wXvjG3+b8hMLgnjzQrN8Jbby/Cv14/y+zfUEsBAhcLFAAAAAgA4KH+XEh4
-1HDiAgAA8AgAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB9Swa2pQ
+V2wXvjG3+b8hMLgnjzQrN8Jbby/Cv14/y+zfUEsBAhcLFAAAAAgAFHESXUh4
+1HDiAgAA8AgAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB3pnhGpQ
 SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 </Image>
 				<AppliesTo>
@@ -1430,26 +1432,16 @@ SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 					<Tag name="Tipo Cliente" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Componente de Actor de Negocio" metatype="Componente de Actor de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
-				<AppliesTo>
-					<Apply type="Component">
-						<Property name="isIndirectlyInstantiated" value="true"/>
-					</Apply>
-				</AppliesTo>
-			</Stereotype>
 			<Stereotype name="Componente de Negocio" metatype="Componente de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
-			</Stereotype>
-			<Stereotype name="Componente Interno de Negocio" metatype="Componente Interno de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
-				<AppliesTo>
-					<Apply type="Component">
-						<Property name="isIndirectlyInstantiated" value="true"/>
-					</Apply>
-				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo Componente de Negocio" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Contenido" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Concepto de Arquitectura" metatype="Concepto de Arquitectura" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
@@ -1527,13 +1519,14 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Elemento Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Entorno Ejecucion Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1543,39 +1536,88 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
-					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente Nube" type="" description="" unit="" values="" default=""/>
+					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" instanceType="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
+			<Stereotype name="Estructura de Negocio" metatype="Estructura de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5rMa5bgf5bgf57YgAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA660z56045q0356035qw4
+5q04AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5qVS5qJR5aFR56NQ5aJR
+56NQ5aFR5aFTAAAAAAAAAAAAAAAAAAAAAAAAAAAA6phn6Jdq1apV6Zhr6Jhp
+55dr55dr55hr6Jdq6phnAAAAAAAAAAAA/4CA54uD6IyC6YyB/6qqAAAAAAAA
+64mA6Y2D6YyB74+A/6qq6YyC6IyC54uD/4CA6IGc6YCd6YGb/4CAAAAA/5mZ
+6ICb6ICX6YGb74CfAAAAAAAA/4CA6YGb6YCd6IGc6XazAAAA6Xez7ne7AAAA
+6nW16HWz6Xaz6Xa11YCqAAAAAAAA7ne76XezAAAA6Xaz3W7DAAAA3m3D3m7E
+AAAAzGbM3m3E1Wq/4W3C3m/CAAAAAAAA3m7E3m3DAAAA3W7DyWrLAAAA/wD/
+ymnKy2nLy2nLymrKy2vLy2rLyWrLy2nLy2nLymnK/wD/AAAAyWrLtWbRAAAA
+s2jQtmbTuGXStmXTtGLStWfRtmPQuWTRt2XSuGXStmbTs2jQAAAAtWbRoGHZ
+oWDZoWHZoV7ZAAAAoWDaAAAAomHYoGDYAAAAol/YAAAAoV7ZoWHZoWDZoGHZ
+AAAAAAAAAAAAAAAAAAAAjFvgAAAAjVrgi13gAAAAjVrgAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAeFbne1jlelfmeFXmeFjneVbmAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAYGDfY1HvZFHuY1LtZFLvbUn/AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAA
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAE53El1PtkrtZgMAABAKAAAHABEAc3RyLmRhdFVUDQAHL3OE
+ai9zhGovc4RqfZbdThRBEIXrVhLfYbPcQKIoaLzQeIEC0UTBiBd4ZfaPZXRh
+15kFQePD8gC8g+ermnZ2ZmfJZv66u6pOnTpdvYWdWc9mNrKOnestswu9/bGH
+tmYPyvuFTa3wdUO9/dL8a11zy+1Sdq9qa5/o17Ft29L9QKtz+y27XF+X7nms
+d7xxdWRdyM+tZoblqqEjmdidxkYa69iGvHWEMLNrjUxss4xU6GvuyC+EKZPl
+XBhZvdmKaccx7Wn9qWeZLaAaCM/E0QYmvA6EgZXMgeJQY4F+0/HE6kIrOsI5
+0EVWy9gq3xv21B5pdbq34wzumjjJHM4zj9zO057t2rG9s329RY1yzdw4MiLu
+2ZF90a+an3n+c69GndeJx4763OhrJP9drxJK6K7AnjjOrC/P3x1XIIefc/cJ
+elhr8h4Z5b6eeLFyw3XW0xdVQSPMzHVPeIkMSubgvFfqoEIY2BZREQ9Pg1J9
+Y42DIxCBjMx/ahSc5Bzr0T9ahfHgAoQnzu5Xv5+ofvEVT5APhGdq3xo+Y3bi
+7DfjpdxQGxUa/kdb19C2ns23nYVnk4OD0j/VZV+2V2e4wBQZVx7gfngPx8dl
+PaM79Gox+l7nqPKNRxnVFEJ06prrLRSxqvL1usPRD422oVrE9sy1+UGxyDU0
+ABOo8VLoosNFJ6QSqSOyC0Izt45p6pxQeTLlCaZrnyk8Yqf8wd5wyTv7qLKI
+rjJVBci621rVZj6LSFd5Sj08YUm/M+kw6j92ndMFurJJ3Ob6imhNy6tWSyLP
+Vtq0jUU1dr0a+84/qjsXR1Q4dMEo95HGA1n0AnZgZuz1vs9W+/VAeo9d04w3
+c0XhY6I77K/7HsDz+lInS1Z/y7EYjS+uxR79xhWQtAJu0KBZ+nTgCuWicrIj
+n5krMJ2KketdmQdZgg37K/9K5ww27BEUOXZOQNMeM84svN2vicjlk6FbbMI+
+4cJTRK33ptgvqK/aqeCIDoUy47Rkhv34WFWmU84b9WE+8zjUs0IfujqUVVNV
+y9jfOtpxiXmZo0BWlF0n5lFwaC0X74zELHa3pR02aXxfWl2O/N4+irkj+6zz
+dFdoOVVf+up2Rff9jbrAIlyj5OrcO3U+QA7f18Y/CnjZqsWuckPH9Og4ScFb
+iOkX9lyVuZbVzDjVop/cd2Ik9YfK1+wfUEsBAhcLFAAAAAgATncSXU+2Su1m
+AwAAEAoAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUABy9zhGpQSwUG
+AAAAAAEAAQA+AAAAnAMAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Boundary"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Ejecutable" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Interfaz de Integración" metatype="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
 				<AppliesTo>
 					<Apply type="Interface">
-						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
-						<Property name="_makeComposite" value="True"/>
 						<Property name="_tagGroupings" value="Patrón Composición=API-Webservice;Patrón Exposición=API-Webservice;Patrón Pass Through=API-Webservice;Patrón Wrapper=API-Webservice;Es Síncrono=API-Webservice;Patrón Integración Composición=Integración;Patrón Integración Orquestación=Integración;Patrón Integración Transformación=Integración;Patrón Integración Enrutamiento=Integración;Patrón Integración Adaptador-Conector=Integración;Patrón Integración Validación=Integración;Patrón Integración Enriquecimiento=Integración;Patrón Integración Batch Processing=Integración;Patrón Seguridad Gateway=Servicio de Seguridad;Patrón Seguridad Wrapper Seguro=Servicio de Seguridad;Patrón Seguridad Pass Through Seguro=Servicio de Seguridad;Patrón Seguridad Terminación TLS-mTLS=Servicio de Seguridad;Dominio=Servicio de Seguridad;Patrón Colas Punto a Punto=Servicio de Colas;Patrón Colas Publicador-Suscriptor=Servicio de Colas;Patrón Colas Request-Reply=Servicio de Colas;Patrón Colas Dead Letter Queue=Servicio de Colas;Patrón Colas Backout Queue=Servicio de Colas;Patrón Colas Priorización Mensajes=Servicio de Colas;Es Persistente=Servicio de Colas;Patrón STA MFT=Servicio Transferencia de Archivos;Patrón STA Intercambio Seguro Archivos=Servicio Transferencia de Archivos;Patrón STA Transferencia Programada=Servicio Transferencia de Archivos;Patrón STA Transferencia Basada en Eventos=Servicio Transferencia de Archivos;Patrón STA Automatización de Flujos de Archivos=Servicio Transferencia de Archivos;Patrón STA File Pickup / File Drop=Servicio Transferencia de Archivos;Patrón STA Distribución Multidestino=Servicio Transferencia de Archivos;Patrón STA Consolidación de Archivos=Servicio Transferencia de Archivos;Patrón STA Cifrado y Decifrado de Archivos=Servicio Transferencia de Archivos;Patrón STA Compresión y Descompresión=Servicio Transferencia de Archivos;Patrón STA Intercambio B2B de Archivos=Servicio Transferencia de Archivos;"/>
 						<Property name="_tagGroups" value="API-Webservice,Integración,Servicio de Seguridad,Servicio de Colas,Servicio Transferencia de Archivos"/>
 						<Property name="isIndirectlyInstantiated" value="true"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Dominio" type="" description="" unit="" values="" default=""/>
-					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
 					<Tag name="Es Persistente" type="" description="" unit="" values="" default=""/>
 					<Tag name="Es Síncrono" type="" description="" unit="" values="" default=""/>
-					<Tag name="ID" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Backout Queue" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Dead Letter Queue" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Colas Priorización Mensajes" type="" description="" unit="" values="" default=""/>
@@ -1610,14 +1652,17 @@ wMDAwMDAwMDAwMDA
 					<Tag name="Patrón STA Transferencia Programada" type="" description="" unit="" values="" default=""/>
 					<Tag name="Patrón Wrapper" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Interfaz de Integración" type="" description="" unit="" values="" default=""/>
+					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" instanceType="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
+			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
 				<AppliesTo>
 					<Apply type="Interface"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Herramienta Integración" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otra Herramienta Integración" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -1635,7 +1680,7 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Middleware" metatype="Middleware" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Middleware" metatype="Middleware" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -1643,9 +1688,10 @@ wMDAwMDAwMDAwMDA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Motor base de datos" metatype="Motor base de datos" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Motor base de datos" metatype="Motor base de datos" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -1653,6 +1699,65 @@ wMDAwMDAwMDAwMDA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Negocio" metatype="Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKjM+HSQrIScuAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgoKMDpHYneQX3ONLjdD
+JSw1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA8PND9MZXqUYHSNRVNl
+YHSNLzdDBQUKAAAAAAAAAAAAAAAAAAAAAAAAAAAAExMTOEJRoMHqeJCvSFdp
+YHSNYHSNN0NRND9MDRMTAAAAAAAAAAAAAAAAEg4EFxILO0hXosTtpMbwpMbw
+k7LYYnaPN0RSj63Sl7fdOkZUCw0dBAQWAAAAIxgJkl4gPDImo8TupMbwocLr
+eZOxlrXbOENQj63SmbngmbngmLjeICRJLjCoCgwqKBoIzIUtZUgimrripMbw
+do2sVml+N0JQU2R5lbXbmbngmbngkK7TJil2P0LrDQ0uKBoIzIUtpm0lb3+T
+pMbwocLrQ1FjkrDVgJu7fZi4mbngmbngYHSVMzW+P0LrDQ0uKBoIzIUty4Qt
+R0RAeJGweJGwPltuJ1dpLGF2Q2N4cIikcIikLjZZP0LqP0LrDQ0uKBoIzIUt
+tncoKBoJAAAABxYcMrbdKpe3L6rOMrfeBxgcAAAADQ0vODvSP0LrDQ0uIRUH
+PyoOJhkKAAAAAAAAFk1cOtP/K5y9GVtuOtP/FlBhAAAAAAAADAwsFBVJCwsn
+AAAAAAAAAAAAAAAAAAAAFlFhOtP/GVlsK5y9OtP/F1FiAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAADS01M7riL6rNKpe3M7jfDSw2AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADSs1Fk9gFlFhDSw1AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAA
+</Icon>
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAHpxEl1bqJAzowIAAIYHAAAHABEAc3RyLmRhdFVUDQAHEWiE
+ahFohGoRaIRqhVXbbtNAEJ3XIvEPVvLiSjQl5SIBBSlAKiGVUCHekXMh3ap1
+XduUtqgfmw/oP3DOjBfHXhu0ynp2dud25uymkFNJJJOVRHIByUkK6bc8lkf4
+2tjHiGQsI8wfcfKHnnKSY72QSznHL4e+wDqGD/rJsX+uOxG8byA5WepqAXmD
+s05tI2gZewKLBXJx8hnWJXS7jRwKaEqNTK911FgO5AXGE5yppbG8wmpX3kAO
+vbDatOHjqVr5mXZ9Vr+0jhKZxojSPhmidlCh5mQuP+VMkYkQNxEikaiGCBEv
+5uQgJ9g3XPidQFtqntveiTf1CazWOLdqVTHGd1sKsQhzfaa5Hmt21sOoyqVA
+7nPMNVeuoPGcSSFZZRtomCs7TTYQX37ZzxvdKRpxE5xcBt5jGTQsZpDXkIjO
+Jfb66uurbjvvfr9t1vtxKt8VBYezvBtv8RvAhmygtxyrZmw/rjstGTvrtenS
+WXcm2p2p9iOFjwtgRhbUTOG8gt4yY0Ux5CXikydz3bUby2yO9IZ0xfNsLGGR
+ajcOMYZAzOpdwUMpt4roUN5hDP7iv4MR2g/xJad4vj7bjrutu9eVzfwZBs8V
+g/fKK89AVs+acuG7wU6yOt4iauymEJVMeX1X8doQe6jQIFbMkPbXusrUo7+p
+Tnm+VmSZTXdMe9Ho7d/MslpOhBykjdn7vOjJovJFZZXEkmveE2JOdC075mEv
+ARnOfs90h+/THriSaM+aXea+0zhkRZ29sXMGqzY3w9w/aLbrKucQI8usqN52
+2+c9MMbmwJ0a26XdprKz/xDTT8H4MPIn/D+cyBf5Kt+wP8M8ldd6uvtezFVi
+X/z7yvvgsYvwj0I8mDnxvsHXXtVRI3ZdG9nMl5yds3wLIP0SzMxgPcLM99je
+qP+9x57b9/IHUEsBAhcLFAAAAAgAenESXVuokDOjAgAAhgcAAAcACQAAAAAA
+AAAAAACAAAAAAHN0ci5kYXRVVAUABxFohGpQSwUGAAAAAAEAAQA+AAAA2QIA
+AAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Objeto de Negocio" metatype="Objeto de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessObject" baseStereotypes="ArchiMate3::ArchiMate_BusinessObject">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Valor" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Producto" metatype="Producto" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Product" baseStereotypes="ArchiMate3::ArchiMate_Product">
@@ -1780,6 +1885,7 @@ AAA=
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Servidor" metatype="Servidor" notes="" cx="0" cy="0" bgcolor="12648384" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Node" baseStereotypes="ArchiMate3::ArchiMate_Node">
@@ -1797,6 +1903,7 @@ AAA=
 					<Tag name="Función" type="" description="" unit="" values="" default=""/>
 					<Tag name="Gerencia" type="" description="" unit="" values="" default=""/>
 					<Tag name="Hostname" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="IP Principal" type="" description="" unit="" values="" default=""/>
 					<Tag name="Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Rol Servidor" type="" description="" unit="" values="" default=""/>
@@ -1850,6 +1957,19 @@ AAEAPgAAAAICAAAAAA==
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Tipo Canal" metatype="Tipo Canal" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIACytE10+AIjbdQEAAA4HAAAHABEAc3RyLmRhdFVUDQAHIiOG
+aiIjhmoiI4ZqxVRNS8NAEH1nwf+wRIQWROtV8RAaUMFeSu4Sm7QNtGtJ2iBK
+f7In/4BvJglN6h60RMqwm5mdzzez2RxzRFghgcGSXAqLU5zgQ3dT0RKvKGiz
+5reHAS54NkAfty2rhXrXVte02LdsWl+RDJ7oFWlmw7XgnmODF+67uiaMZzFl
+9Bl1Gc9jnhhqI5UMpQk1pWzoI3HK/OfkYo0ieWT/1BqjVi0SMf6RuQePWBK8
+KaIhOUsuI+8prh3CknOhbOJwx2pat7te0xzP2hvBbynfcXlEXMZIGMXbm0RN
+xa89Xd4pe27YhQfGyBFyn2lPQmpWOoEhz6xmKDviwadGUBW0yblkcjLftMop
+veuTXPnc6GuSuHK/1lqDj0ucsRIf97jBIwJKEtndh63zVO5JrpM5BOlY/SN2
+8/9Qjo+OMtA5yk1N+W9sFO0XbbrBFxwd30hnJ29Wivdqmt3hGx0dX6gvpKX9
+lBaZvrTdYgw7xOjS/aWWQ+sopS2+AVBLAQIXCxQAAAAIACytE10+AIjbdQEA
+AA4HAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAciI4ZqUEsFBgAA
+AAABAAEAPgAAAKsBAAAAAA==
+</Image>
 				<AppliesTo>
 					<Apply type="Association">
 						<Property name="compositionKind" value="none"/>
@@ -1867,7 +1987,179 @@ AAEAPgAAAAICAAAAAA==
 		<ViewDefinitions/>
 		<Metamodel/>
 	</Content>
-</UMLProfile></UMLProfiles><DiagramProfile><UMLProfile profiletype="uml2">
+</UMLProfile></UMLProfiles><TaggedValueTypes><RefData version="1.0" exporter="EA.25"><DataSet name="Property Types" table="t_propertytypes" filter="Property='#Property#'"><DataRow><Column name="Property" value="Arquitecto de Comunicaciones"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Arquitecto de Datos"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Arquitecto de Infraestructura"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Arquitecto de Integración"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Arquitecto de la Solución"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Arquitecto de Seguridad"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Arquitecto de Software"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Arquitecto Devops"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="CSP"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=AWS,Azure,OCI,GCP,Otro;"/></DataRow><DataRow><Column name="Property" value="DBA"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Diseño Arquitectura Aplicación"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Diseño Base de Datos"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Diseño Comunicaciones"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Diseño de Seguridad Informática"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Diseño Devops"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Diseño Información"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Diseño Infraestructura"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Diseño Integración"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Dominio Riesgo"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Seguridad,Continuidad,Operacional,Prevención del Fraude,Ciberseguridad;"/></DataRow><DataRow><Column name="Property" value="Estado Arquitectura"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Identificado,Diseñado,Implementado,Productivo;"/></DataRow><DataRow><Column name="Property" value="Estado Capacidad"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Identificada,Diseñada,Implementada,Productiva;"/></DataRow><DataRow><Column name="Property" value="Estado Concepto de Arquitectura"/><Column name="Description" value="No editable"/><Column name="Notes" value="Type=Const;"/></DataRow><DataRow><Column name="Property" value="Estado Servicio"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Identificado,Diseñado,Implementado,Productivo;"/></DataRow><DataRow><Column name="Property" value="Fecha de aprobación"/><Column name="Description" value="Date"/><Column name="Notes" value="Type=Date;"/></DataRow><DataRow><Column name="Property" value="Fecha de creación"/><Column name="Description" value="Date"/><Column name="Notes" value="Type=Date;"/></DataRow><DataRow><Column name="Property" value="Fecha de presentación"/><Column name="Description" value="Date"/><Column name="Notes" value="Type=Date;"/></DataRow><DataRow><Column name="Property" value="Herramienta Integración"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=CP4I - API Connect,CP4I - ACE,CP4I - Datapower,CP4I - MQ,Otra;"/></DataRow><DataRow><Column name="Property" value="Implementa a"/><Column name="Description" value="Objeto a referenciar"/><Column name="Notes" value="Type=RefGUID;"/></DataRow><DataRow><Column name="Property" value="Ingeniero de Aplicaciones"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Innovación o Mantenimiento"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=I,M;"/></DataRow><DataRow><Column name="Property" value="Líder de Equipo"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Líder de Seguridad"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Líder Técnico"/><Column name="Description" value="Usuarios"/><Column name="Notes" value="Type=Enum;&#xA;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Patrón Composición"/><Column name="Description" value="SiNo"/><Column name="Notes" value="Type=Enum;&#xA;Values=Sí,No;"/></DataRow><DataRow><Column name="Property" value="Patrón Exposición"/><Column name="Description" value="SiNo"/><Column name="Notes" value="Type=Enum;&#xA;Values=Sí,No;"/></DataRow><DataRow><Column name="Property" value="Patrón Pass Through"/><Column name="Description" value="SiNo"/><Column name="Notes" value="Type=Enum;&#xA;Values=Sí,No;"/></DataRow><DataRow><Column name="Property" value="Patrón Wrapper"/><Column name="Description" value="SiNo"/><Column name="Notes" value="Type=Enum;&#xA;Values=Sí,No;"/></DataRow><DataRow><Column name="Property" value="Patrones Servicio Colas"/><Column name="Description" value="Checklist"/><Column name="Notes" value="Type=CheckList;&#xA;Values=Punto a Punto,Publicador / Suscriptor,Request/Reply,Dead Letter Queue,Backout Queue,Priorización Mensajes;"/></DataRow><DataRow><Column name="Property" value="Patrones Servicio Integración"/><Column name="Description" value="Checklist"/><Column name="Notes" value="Type=CheckList;&#xA;Values=Composición,Orquestación,Transformación,Enrutamiento,Adaptador / Conector,Validación,Enriquecimiento,Batch;"/></DataRow><DataRow><Column name="Property" value="Patrones Servicio Seguridad"/><Column name="Description" value="Checklist"/><Column name="Notes" value="Type=CheckList;&#xA;Values=Gateway Seguridad,Wrapper Seguridad,Pass Through Seguro,Validación TLS/mTLS,Aplicación de Políticas,Protección Mensajes;"/></DataRow><DataRow><Column name="Property" value="Patrones Servicio Transferencia Archivos"/><Column name="Description" value="Checklist"/><Column name="Notes" value="Type=CheckList;&#xA;Values=Intercambio Seguro de Archivos,Transferencia Programada,Transferencia Basada en Eventos,Automatización de Flujos de Archivos,File Pickup / File Drop,Distribución Multi Destino,Consolidación de Archivos,Cifrado y Descifrado de Archivos,Compresión y Descompresión,Intercambio B2B de Archivos;"/></DataRow><DataRow><Column name="Property" value="Product Owner"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;List=Authors;"/></DataRow><DataRow><Column name="Property" value="Subtipo Cliente"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Grande,Pequeña,Nacional,Municipal,Regional;"/></DataRow><DataRow><Column name="Property" value="Tipo Agrupamiento Nube"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Aplicación,Integración,Almacenamiento,Base de Datos,Comunicaciones,Seguridad,Configuración;"/></DataRow><DataRow><Column name="Property" value="Tipo Ambiente"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Pruebas,Certificación,Producción;"/></DataRow><DataRow><Column name="Property" value="Tipo API/Servicio"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=REST,SOAP;"/></DataRow><DataRow><Column name="Property" value="Tipo Canal"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Aprovisionamiento,Distribución,Monetización,Relacionamiento,Transformación;"/></DataRow><DataRow><Column name="Property" value="Tipo Capacidad"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Estratégica,Misional,Funcionamiento;"/></DataRow><DataRow><Column name="Property" value="Tipo Cliente"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Persona Natural,Entidad Financiera,Interno,Empresa,Gobierno;"/></DataRow><DataRow><Column name="Property" value="Tipo Componente de Negocio"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Interno,de Actor;"/></DataRow><DataRow><Column name="Property" value="Tipo Contenido"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Valor,Dinero,Información;&#xA;"/></DataRow><DataRow><Column name="Property" value="Tipo de Interfaz de Integración"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=API/Webservice,Integración,Servicio de Seguridad,Servicio de Colas,Servicio de Transferencia de Archivos;"/></DataRow><DataRow><Column name="Property" value="Tipo de requerimiento"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Nueva solución o servicio,Modificar funcionalidad existente de servicio,Nueva funcionalidad de servicio existente;"/></DataRow><DataRow><Column name="Property" value="Tipo Despliegue Nube"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Serverless,PaaS,IaaS;"/></DataRow><DataRow><Column name="Property" value="Tipo Elemento Nube"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Aplicación,Integración,Almacenamiento,Base de Datos,Comunicaciones,Seguridad,Configuración;"/></DataRow><DataRow><Column name="Property" value="Tipo Recurso"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Recurso de TI,Otro Recurso;"/></DataRow><DataRow><Column name="Property" value="Tipo Resultado"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Intangible,Tangible,Elemento Digital,Información,Cambio de Estado,Cumplimiento de Requisito,Aprobación,Plataforma;"/></DataRow><DataRow><Column name="Property" value="Tipo Servicio"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Interno,Externo,Interno/Externo;"/></DataRow><DataRow><Column name="Property" value="Tipo Sistema"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Aplicación,Integración,Almacenamiento,Base de Datos,Comunicaciones,Seguridad,Configuración;"/></DataRow><DataRow><Column name="Property" value="Tipo Tercero"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Aliado,Proveedor,Regulador;"/></DataRow><DataRow><Column name="Property" value="Tipo Valor"/><Column name="Description" value="Lista"/><Column name="Notes" value="Type=Enum;&#xA;Values=Producto Físico,Producto Digital,Bien Físico Durable,Servicio,Resultado,Recursos Humanos, Información,Dinero,Bienes Intangibles,Plataforma;"/></DataRow></DataSet></RefData></TaggedValueTypes><Images><RefData version="1.0" exporter="EA.25"><DataSet name="Model Images" table="t_image" filter="Name='#Name#'" stoplist=";ImageID;"><DataRow><Column name="ImageID" value="610105795"/><Column name="Name" value="business-64px.png"/><Column name="Type" value="Bitmap"/><Column name="Image" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">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
+38gIQfnIAAAAAElFTkSuQmCC
+</Column></DataRow><DataRow><Column name="ImageID" value="1880598669"/><Column name="Name" value="client-64.png"/><Column name="Type" value="Bitmap"/><Column name="Image" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">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
+TkSuQmCC
+</Column></DataRow></DataSet></RefData></Images><DiagramProfile><UMLProfile profiletype="uml2">
 	<Documentation id="0C205AE51F" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
@@ -1933,16 +2225,18 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile></DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
-	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Capa de Aplicaciones" notes="Alias=Capa de Aplicaciones;"/>
+	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Vista Lógica de Aplicaciones" notes="Alias=Vista Lógica de Aplicaciones;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Aplicaciones" notes="" cx="281" cy="101" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
 					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
 					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
 					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
@@ -1963,10 +2257,10 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="392C71949D" name="ACH_Capa_de_Datos" version="1.0" alias="Capa de Datos" notes="Alias=Capa de Datos;"/>
+	<Documentation id="392C71949D" name="ACH_Capa_de_Datos" version="1.0" alias="Vista de Datos" notes="Alias=Vista de Datos;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -1997,26 +2291,31 @@ AAEAPgAAAAICAAAAAA==
 	<Documentation id="3FE0A06C22" name="ACH_General" version="1.0" alias="General" notes="Alias=General;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Aplicaciones" notes="" cx="281" cy="101" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
 					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
 					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
 					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>
@@ -2025,25 +2324,25 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="ACH::Servidor(UML::Class)" type="" description="" unit="" values="" default="Servidor"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Negocio" notes="" cx="272" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Negocio" notes="" cx="348" cy="231" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
+					<Tag name="ACH::Canal(UML::Interface)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente Actor(ACH::Class)" type="" description="" unit="" values="" default="Componente Actor"/>
-					<Tag name="ACH::Componente Interno(ACH::Class)" type="" description="" unit="" values="" default="Componente Interno"/>
-					<Tag name="ACH::Componente(UML::Class)" type="" description="" unit="" values="" default="Componente"/>
+					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
+					<Tag name="ACH::Estructura de Negocio(UML::Boundary)" type="" description="" unit="" values="" default="Estructura de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
+					<Tag name="ACH::Negocio(UML::Class)" type="" description="" unit="" values="" default="Negocio"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
-					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
-					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
-					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
 					<Tag name="ACH::Servicio(UML::Activity)" type="" description="" unit="" values="" default="Servicio"/>
 					<Tag name="ACH::Tercero(UML::Class)" type="" description="" unit="" values="" default="Tercero"/>
+					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
+					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
+					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Conectores" notes="" cx="219" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -2055,7 +2354,7 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -2068,7 +2367,7 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="EAUML::view" type="" description="" unit="" values="" default="Vista"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -2085,17 +2384,20 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Capa de Infraestructura" notes="Alias=Capa de Infraestructura;"/>
+	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Vista de Infraestructura" notes="Alias=Vista de Infraestructura;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>
@@ -2113,34 +2415,145 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
 				</TaggedValues>
 			</Stereotype>
+			<Stereotype name="ACH AWS" notes="" cx="378" cy="855" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="AWS_Arquesoft::AWS ACM Certificate(UML::Requirement)" type="" description="" unit="" values="" default="ACM Certificate"/>
+					<Tag name="AWS_Arquesoft::AWS API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS Aurora Database(UML::Requirement)" type="" description="" unit="" values="" default="Aurora Database"/>
+					<Tag name="AWS_Arquesoft::AWS Auto Scaling Group(UML::Requirement)" type="" description="" unit="" values="" default="Auto Scaling Group"/>
+					<Tag name="AWS_Arquesoft::AWS-AZ(UML::Requirement)" type="" description="" unit="" values="" default="Availability Zone"/>
+					<Tag name="AWS_Arquesoft::AWS Account(UML::Requirement)" type="" description="" unit="" values="" default="AWS Account"/>
+					<Tag name="AWS_Arquesoft::AWS CloudFront Distribution(UML::Requirement)" type="" description="" unit="" values="" default="CloudFront Distribution"/>
+					<Tag name="AWS_Arquesoft::AWS CloudTrail(UML::Requirement)" type="" description="" unit="" values="" default="CloudTrail"/>
+					<Tag name="AWS_Arquesoft::AWS CodeBuild Project(UML::Requirement)" type="" description="" unit="" values="" default="CodeBuild Project"/>
+					<Tag name="AWS_Arquesoft::AWS Cognito(UML::Requirement)" type="" description="" unit="" values="" default="Cognito"/>
+					<Tag name="AWS_Arquesoft::AWS Customer Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Customer Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS DynamoDB Table(UML::Requirement)" type="" description="" unit="" values="" default="DynamoDB Table"/>
+					<Tag name="AWS_Arquesoft::AWS EC2 Fleet(UML::Requirement)" type="" description="" unit="" values="" default="EC2 Fleet"/>
+					<Tag name="AWS_Arquesoft::AWS EC2 Instance(UML::Requirement)" type="" description="" unit="" values="" default="EC2 Instance"/>
+					<Tag name="AWS_Arquesoft::AWS ECR Repository(UML::Requirement)" type="" description="" unit="" values="" default="ECR Repository"/>
+					<Tag name="AWS_Arquesoft::AWS ECS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="ECS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS EFS Access Point(UML::Requirement)" type="" description="" unit="" values="" default="EFS Access Point"/>
+					<Tag name="AWS_Arquesoft::AWS EFS Filesystem(UML::Requirement)" type="" description="" unit="" values="" default="EFS Filesystem"/>
+					<Tag name="AWS_Arquesoft::AWS EKS(UML::Requirement)" type="" description="" unit="" values="" default="EKS"/>
+					<Tag name="AWS_Arquesoft::AWS EKS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="EKS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS EKS Container(UML::Requirement)" type="" description="" unit="" values="" default="EKS Container"/>
+					<Tag name="AWS_Arquesoft::AWS Elastic IP Address(UML::Requirement)" type="" description="" unit="" values="" default="Elastic IP Address"/>
+					<Tag name="AWS_Arquesoft::AWS Event Bridge(UML::Requirement)" type="" description="" unit="" values="" default="Event Bridge"/>
+					<Tag name="AWS_Arquesoft::AWS Event Bus(UML::Requirement)" type="" description="" unit="" values="" default="Event Bus"/>
+					<Tag name="AWS_Arquesoft::AWS Event Rule(UML::Requirement)" type="" description="" unit="" values="" default="Event Rule"/>
+					<Tag name="AWS_Arquesoft::AWS Glue Job(UML::Requirement)" type="" description="" unit="" values="" default="Glue Job"/>
+					<Tag name="AWS_Arquesoft::AWS GraphQL API(UML::Requirement)" type="" description="" unit="" values="" default="GraphQL API"/>
+					<Tag name="AWS_Arquesoft::AWS Hosted Zone(UML::Requirement)" type="" description="" unit="" values="" default="Hosted Zone"/>
+					<Tag name="AWS_Arquesoft::AWS IAM User(UML::Requirement)" type="" description="" unit="" values="" default="IAM User"/>
+					<Tag name="AWS_Arquesoft::AWS Internet Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Internet Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS KMS Key(UML::Requirement)" type="" description="" unit="" values="" default="KMS Key"/>
+					<Tag name="AWS_Arquesoft::AWS Lambda Function(UML::Requirement)" type="" description="" unit="" values="" default="Lambda Function"/>
+					<Tag name="AWS_Arquesoft::AWS Load Balancer(UML::Requirement)" type="" description="" unit="" values="" default="Load Balancer"/>
+					<Tag name="AWS_Arquesoft::AWS Namespace(UML::Requirement)" type="" description="" unit="" values="" default="Namespace"/>
+					<Tag name="AWS_Arquesoft::AWS NAT Gateway(UML::Requirement)" type="" description="" unit="" values="" default="NAT Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS Network Interface(UML::Requirement)" type="" description="" unit="" values="" default="Network Interface"/>
+					<Tag name="AWS_Arquesoft::AWS Pod(UML::Requirement)" type="" description="" unit="" values="" default="Pod"/>
+					<Tag name="AWS_Arquesoft::AWS PostgreSQL Instance(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL Instance"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="RDS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS RestApi(UML::Requirement)" type="" description="" unit="" values="" default="Rest API"/>
+					<Tag name="AWS_Arquesoft::AWS VPN(UML::Requirement)" type="" description="" unit="" values="" default="VPN"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Instance(UML::Requirement)" type="" description="" unit="" values="" default="RDS Instance"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="RDS Security Group"/>
+					<Tag name="AWS_Arquesoft::AWS-Region(UML::Requirement)" type="" description="" unit="" values="" default="Region"/>
+					<Tag name="AWS_Arquesoft::AWS Route Table(UML::Requirement)" type="" description="" unit="" values="" default="Route Table"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Bucket(UML::Requirement)" type="" description="" unit="" values="" default="S3 Bucket"/>
+					<Tag name="AWS_Arquesoft::AWS Secret(UML::Requirement)" type="" description="" unit="" values="" default="Secret"/>
+					<Tag name="AWS_Arquesoft::AWS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Security Group"/>
+					<Tag name="AWS_Arquesoft::AWS SNS Topic(UML::Requirement)" type="" description="" unit="" values="" default="SNS Topic"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Access Point(UML::Requirement)" type="" description="" unit="" values="" default="S3 Access Point"/>
+					<Tag name="AWS_Arquesoft::AWS SQS Queue(UML::Requirement)" type="" description="" unit="" values="" default="SQS Queue"/>
+					<Tag name="AWS_Arquesoft::AWS Statemachine(UML::Requirement)" type="" description="" unit="" values="" default="Statemachine"/>
+					<Tag name="AWS_Arquesoft::AWS Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
+					<Tag name="AWS_Arquesoft::AWS Task(UML::Requirement)" type="" description="" unit="" values="" default="Task"/>
+					<Tag name="AWS_Arquesoft::AWS Transit Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Transit Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS UserPool(UML::Requirement)" type="" description="" unit="" values="" default="User Pool"/>
+					<Tag name="AWS_Arquesoft::AWS Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
+					<Tag name="AWS_Arquesoft::AWS VPC(UML::Requirement)" type="" description="" unit="" values="" default="VPC"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint Service(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint Service"/>
+					<Tag name="AWS_Arquesoft::AWS WAF(UML::Requirement)" type="" description="" unit="" values="" default="WAF"/>
+					<Tag name="AWS_Arquesoft::AWS WebACL(UML::Requirement)" type="" description="" unit="" values="" default="Web ACL"/>
+					<Tag name="AWS_Arquesoft::AWS WorkGroup(UML::Requirement)" type="" description="" unit="" values="" default="WorkGroup"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="ACH OCI" notes="" cx="382" cy="478" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="OCI_Arquesoft::OCI API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
+					<Tag name="OCI_Arquesoft::OCI Autonomous Database(UML::Requirement)" type="" description="" unit="" values="" default="Autonomous Database"/>
+					<Tag name="OCI_Arquesoft::OCI Availability Domain(UML::Requirement)" type="" description="" unit="" values="" default="Availability Domain"/>
+					<Tag name="OCI_Arquesoft::OCI Boot Volume(UML::Requirement)" type="" description="" unit="" values="" default="Boot Volume"/>
+					<Tag name="OCI_Arquesoft::OCI Bucket(UML::Requirement)" type="" description="" unit="" values="" default="Bucket"/>
+					<Tag name="OCI_Arquesoft::OCI Cluster(UML::Requirement)" type="" description="" unit="" values="" default="Cluster"/>
+					<Tag name="OCI_Arquesoft::OCI Compartment(UML::Requirement)" type="" description="" unit="" values="" default="Compartment"/>
+					<Tag name="OCI_Arquesoft::OCI DB System(UML::Requirement)" type="" description="" unit="" values="" default="DB System"/>
+					<Tag name="OCI_Arquesoft::OCI DNS Zone(UML::Requirement)" type="" description="" unit="" values="" default="DNS Zone"/>
+					<Tag name="OCI_Arquesoft::OCI DRG(UML::Requirement)" type="" description="" unit="" values="" default="DRG"/>
+					<Tag name="OCI_Arquesoft::OCI File System(UML::Requirement)" type="" description="" unit="" values="" default="File System"/>
+					<Tag name="OCI_Arquesoft::OCI Firewall(UML::Requirement)" type="" description="" unit="" values="" default="Firewall"/>
+					<Tag name="OCI_Arquesoft::OCI Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Gateway"/>
+					<Tag name="OCI_Arquesoft::OCI Image(UML::Requirement)" type="" description="" unit="" values="" default="Image"/>
+					<Tag name="OCI_Arquesoft::OCI Instance Pool(UML::Requirement)" type="" description="" unit="" values="" default="Instance Pool"/>
+					<Tag name="OCI_Arquesoft::OCI Instance(UML::Requirement)" type="" description="" unit="" values="" default="Instance"/>
+					<Tag name="OCI_Arquesoft::OCI IP Sec Connection(UML::Requirement)" type="" description="" unit="" values="" default="IP Sec Connection"/>
+					<Tag name="OCI_Arquesoft::OCI Load Balancer(UML::Requirement)" type="" description="" unit="" values="" default="Load Balancer"/>
+					<Tag name="OCI_Arquesoft::OCI Network Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Network Security Group"/>
+					<Tag name="OCI_Arquesoft::OCI No SQL Table(UML::Requirement)" type="" description="" unit="" values="" default="No SQL Table"/>
+					<Tag name="OCI_Arquesoft::OCI Node Pool(UML::Requirement)" type="" description="" unit="" values="" default="Node Pool"/>
+					<Tag name="OCI_Arquesoft::OCI Private IP(UML::Requirement)" type="" description="" unit="" values="" default="Private IP"/>
+					<Tag name="OCI_Arquesoft::OCI Public IP(UML::Requirement)" type="" description="" unit="" values="" default="Public IP"/>
+					<Tag name="OCI_Arquesoft::OCI Queue(UML::Requirement)" type="" description="" unit="" values="" default="Queue"/>
+					<Tag name="OCI_Arquesoft::OCI SDDCS(UML::Requirement)" type="" description="" unit="" values="" default="SDDCS"/>
+					<Tag name="OCI_Arquesoft::OCI Security List(UML::Requirement)" type="" description="" unit="" values="" default="Security List"/>
+					<Tag name="OCI_Arquesoft::OCI Stream(UML::Requirement)" type="" description="" unit="" values="" default="Stream"/>
+					<Tag name="OCI_Arquesoft::OCI Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
+					<Tag name="OCI_Arquesoft::OCI Vault(UML::Requirement)" type="" description="" unit="" values="" default="Vault"/>
+					<Tag name="OCI_Arquesoft::OCI VCN(UML::Requirement)" type="" description="" unit="" values="" default="VCN"/>
+					<Tag name="OCI_Arquesoft::OCI Virtual Machine(UML::Requirement)" type="" description="" unit="" values="" default="Virtual Machine"/>
+					<Tag name="OCI_Arquesoft::OCI VNIC(UML::Requirement)" type="" description="" unit="" values="" default="VNIC"/>
+					<Tag name="OCI_Arquesoft::OCI Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
+					<Tag name="OCI_Arquesoft::OCI VPN Gateway(UML::Requirement)" type="" description="" unit="" values="" default="VPN Gateway"/>
+				</TaggedValues>
+			</Stereotype>
 		</Stereotypes>
 		<TaggedValueTypes/>
 		<ViewDefinitions/>
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="F5E3CDCCDA" name="ACH_Capa_de_Negocio" version="1.0" alias="Capa de Negocio" notes="Alias=Capa de Negocio;"/>
+	<Documentation id="F5E3CDCCDA" name="ACH_Capa_de_Negocio" version="1.0" alias="Vista de Negocio" notes="Alias=Vista de Negocio;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Negocio" notes="" cx="272" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Negocio" notes="" cx="348" cy="231" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
+					<Tag name="ACH::Canal(UML::Interface)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente Actor(ACH::Class)" type="" description="" unit="" values="" default="Componente Actor"/>
-					<Tag name="ACH::Componente Interno(ACH::Class)" type="" description="" unit="" values="" default="Componente Interno"/>
-					<Tag name="ACH::Componente(UML::Class)" type="" description="" unit="" values="" default="Componente"/>
+					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
+					<Tag name="ACH::Estructura de Negocio(UML::Boundary)" type="" description="" unit="" values="" default="Estructura de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
+					<Tag name="ACH::Negocio(UML::Class)" type="" description="" unit="" values="" default="Negocio"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
-					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
-					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
-					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
 					<Tag name="ACH::Servicio(UML::Activity)" type="" description="" unit="" values="" default="Servicio"/>
 					<Tag name="ACH::Tercero(UML::Class)" type="" description="" unit="" values="" default="Tercero"/>
+					<Tag name="ACH::Resultado(UML::Class)" type="" description="" unit="" values="" default="Resultado"/>
+					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
+					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Conectores" notes="" cx="219" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -2207,13 +2620,12 @@ AAEAPgAAAAICAAAAAA==
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="AWS_Arquesoft::AWS-AZ(UML::Requirement)" type="" description="" unit="" values="" default="Availability Zone"/>
-					<Tag name="AWS_Arquesoft::AWS-Region(UML::Requirement)" type="" description="" unit="" values="" default="Region"/>
-					<Tag name="AWS_Arquesoft::AWS Account(UML::Requirement)" type="" description="" unit="" values="" default="AWS Account"/>
 					<Tag name="AWS_Arquesoft::AWS ACM Certificate(UML::Requirement)" type="" description="" unit="" values="" default="ACM Certificate"/>
 					<Tag name="AWS_Arquesoft::AWS API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
 					<Tag name="AWS_Arquesoft::AWS Aurora Database(UML::Requirement)" type="" description="" unit="" values="" default="Aurora Database"/>
 					<Tag name="AWS_Arquesoft::AWS Auto Scaling Group(UML::Requirement)" type="" description="" unit="" values="" default="Auto Scaling Group"/>
+					<Tag name="AWS_Arquesoft::AWS-AZ(UML::Requirement)" type="" description="" unit="" values="" default="Availability Zone"/>
+					<Tag name="AWS_Arquesoft::AWS Account(UML::Requirement)" type="" description="" unit="" values="" default="AWS Account"/>
 					<Tag name="AWS_Arquesoft::AWS CloudFront Distribution(UML::Requirement)" type="" description="" unit="" values="" default="CloudFront Distribution"/>
 					<Tag name="AWS_Arquesoft::AWS CloudTrail(UML::Requirement)" type="" description="" unit="" values="" default="CloudTrail"/>
 					<Tag name="AWS_Arquesoft::AWS CodeBuild Project(UML::Requirement)" type="" description="" unit="" values="" default="CodeBuild Project"/>
@@ -2226,9 +2638,9 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="AWS_Arquesoft::AWS ECS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="ECS Cluster"/>
 					<Tag name="AWS_Arquesoft::AWS EFS Access Point(UML::Requirement)" type="" description="" unit="" values="" default="EFS Access Point"/>
 					<Tag name="AWS_Arquesoft::AWS EFS Filesystem(UML::Requirement)" type="" description="" unit="" values="" default="EFS Filesystem"/>
+					<Tag name="AWS_Arquesoft::AWS EKS(UML::Requirement)" type="" description="" unit="" values="" default="EKS"/>
 					<Tag name="AWS_Arquesoft::AWS EKS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="EKS Cluster"/>
 					<Tag name="AWS_Arquesoft::AWS EKS Container(UML::Requirement)" type="" description="" unit="" values="" default="EKS Container"/>
-					<Tag name="AWS_Arquesoft::AWS EKS(UML::Requirement)" type="" description="" unit="" values="" default="EKS"/>
 					<Tag name="AWS_Arquesoft::AWS Elastic IP Address(UML::Requirement)" type="" description="" unit="" values="" default="Elastic IP Address"/>
 					<Tag name="AWS_Arquesoft::AWS Event Bridge(UML::Requirement)" type="" description="" unit="" values="" default="Event Bridge"/>
 					<Tag name="AWS_Arquesoft::AWS Event Bus(UML::Requirement)" type="" description="" unit="" values="" default="Event Bus"/>
@@ -2247,15 +2659,17 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="AWS_Arquesoft::AWS Pod(UML::Requirement)" type="" description="" unit="" values="" default="Pod"/>
 					<Tag name="AWS_Arquesoft::AWS PostgreSQL Instance(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL Instance"/>
 					<Tag name="AWS_Arquesoft::AWS RDS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="RDS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS RestApi(UML::Requirement)" type="" description="" unit="" values="" default="Rest API"/>
+					<Tag name="AWS_Arquesoft::AWS VPN(UML::Requirement)" type="" description="" unit="" values="" default="VPN"/>
 					<Tag name="AWS_Arquesoft::AWS RDS Instance(UML::Requirement)" type="" description="" unit="" values="" default="RDS Instance"/>
 					<Tag name="AWS_Arquesoft::AWS RDS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="RDS Security Group"/>
-					<Tag name="AWS_Arquesoft::AWS RestApi(UML::Requirement)" type="" description="" unit="" values="" default="Rest API"/>
+					<Tag name="AWS_Arquesoft::AWS-Region(UML::Requirement)" type="" description="" unit="" values="" default="Region"/>
 					<Tag name="AWS_Arquesoft::AWS Route Table(UML::Requirement)" type="" description="" unit="" values="" default="Route Table"/>
-					<Tag name="AWS_Arquesoft::AWS S3 Access Point(UML::Requirement)" type="" description="" unit="" values="" default="S3 Access Point"/>
 					<Tag name="AWS_Arquesoft::AWS S3 Bucket(UML::Requirement)" type="" description="" unit="" values="" default="S3 Bucket"/>
 					<Tag name="AWS_Arquesoft::AWS Secret(UML::Requirement)" type="" description="" unit="" values="" default="Secret"/>
 					<Tag name="AWS_Arquesoft::AWS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Security Group"/>
 					<Tag name="AWS_Arquesoft::AWS SNS Topic(UML::Requirement)" type="" description="" unit="" values="" default="SNS Topic"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Access Point(UML::Requirement)" type="" description="" unit="" values="" default="S3 Access Point"/>
 					<Tag name="AWS_Arquesoft::AWS SQS Queue(UML::Requirement)" type="" description="" unit="" values="" default="SQS Queue"/>
 					<Tag name="AWS_Arquesoft::AWS Statemachine(UML::Requirement)" type="" description="" unit="" values="" default="Statemachine"/>
 					<Tag name="AWS_Arquesoft::AWS Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
@@ -2263,10 +2677,9 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="AWS_Arquesoft::AWS Transit Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Transit Gateway"/>
 					<Tag name="AWS_Arquesoft::AWS UserPool(UML::Requirement)" type="" description="" unit="" values="" default="User Pool"/>
 					<Tag name="AWS_Arquesoft::AWS Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
-					<Tag name="AWS_Arquesoft::AWS VPC Endpoint Service(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint Service"/>
-					<Tag name="AWS_Arquesoft::AWS VPC Endpoint(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint"/>
 					<Tag name="AWS_Arquesoft::AWS VPC(UML::Requirement)" type="" description="" unit="" values="" default="VPC"/>
-					<Tag name="AWS_Arquesoft::AWS VPN(UML::Requirement)" type="" description="" unit="" values="" default="VPN"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint Service(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint Service"/>
 					<Tag name="AWS_Arquesoft::AWS WAF(UML::Requirement)" type="" description="" unit="" values="" default="WAF"/>
 					<Tag name="AWS_Arquesoft::AWS WebACL(UML::Requirement)" type="" description="" unit="" values="" default="Web ACL"/>
 					<Tag name="AWS_Arquesoft::AWS WorkGroup(UML::Requirement)" type="" description="" unit="" values="" default="WorkGroup"/>
@@ -2306,71 +2719,71 @@ AAEAPgAAAAICAAAAAA==
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="Microsoft.ApiManagement::service(UML::Requirement)" type="" description="" unit="" values="" default="APIManagement"/>
-					<Tag name="Microsoft.App::containerApp(UML::Requirement)" type="" description="" unit="" values="" default="ContainerApp"/>
-					<Tag name="Microsoft.AVS::cluster(UML::Requirement)" type="" description="" unit="" values="" default="Cluster"/>
-					<Tag name="Microsoft.AVS::privateCloud(UML::Requirement)" type="" description="" unit="" values="" default="PrivateCloud"/>
 					<Tag name="Microsoft.AzureActiveDirectory::activeDirectory(UML::Requirement)" type="" description="" unit="" values="" default="ActiveDirectory"/>
 					<Tag name="Microsoft.AzureActiveDirectory::b2cDirectory(UML::Requirement)" type="" description="" unit="" values="" default="AD B2C"/>
-					<Tag name="Microsoft.Cdn::profile(UML::Requirement)" type="" description="" unit="" values="" default="Profile"/>
-					<Tag name="Microsoft.Compute::disk(UML::Requirement)" type="" description="" unit="" values="" default="Disk"/>
-					<Tag name="Microsoft.Compute::galleriesImage(UML::Requirement)" type="" description="" unit="" values="" default="GalleriesImage"/>
-					<Tag name="Microsoft.Compute::gallery(UML::Requirement)" type="" description="" unit="" values="" default="Gallery"/>
-					<Tag name="Microsoft.Compute::image(UML::Requirement)" type="" description="" unit="" values="" default="Image"/>
-					<Tag name="Microsoft.Compute::virtualMachine(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachine"/>
-					<Tag name="Microsoft.Compute::virtualMachineScaleSet(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachineScaleSet"/>
-					<Tag name="Microsoft.ContainerRegistry::registry(UML::Requirement)" type="" description="" unit="" values="" default="ContainerRegistry"/>
-					<Tag name="Microsoft.ContainerService::agentPool(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAgentPool"/>
-					<Tag name="Microsoft.ContainerService::ContainerService(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAKS"/>
-					<Tag name="Microsoft.ContainerService::managedCluster(UML::Requirement)" type="" description="" unit="" values="" default="ContainerManagedCluster"/>
-					<Tag name="Microsoft.Databricks::dbworkspace(UML::Requirement)" type="" description="" unit="" values="" default="Databricks workspace"/>
-					<Tag name="Microsoft.DataFactory::factory(UML::Requirement)" type="" description="" unit="" values="" default="Factory"/>
-					<Tag name="Microsoft.DBforPostgreSQL::flexibleServer(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL flexServer"/>
+					<Tag name="Microsoft.ApiManagement::service(UML::Requirement)" type="" description="" unit="" values="" default="APIManagement"/>
+					<Tag name="Microsoft.Web::serverFarm(UML::Requirement)" type="" description="" unit="" values="" default="AppServicePlan"/>
 					<Tag name="Microsoft.DesktopVirtualization::applicationgroup(UML::Requirement)" type="" description="" unit="" values="" default="AVDApplicationGroups"/>
 					<Tag name="Microsoft.DesktopVirtualization::hostpool(UML::Requirement)" type="" description="" unit="" values="" default="AVDHostpool"/>
-					<Tag name="Microsoft.DocumentDB::databaseAccount(UML::Requirement)" type="" description="" unit="" values="" default="CosmosDB"/>
-					<Tag name="Microsoft.EventGrid::eventGrid(UML::Requirement)" type="" description="" unit="" values="" default="EventGrid"/>
-					<Tag name="Microsoft.EventHub::namespace(UML::Requirement)" type="" description="" unit="" values="" default="Eventhub"/>
-					<Tag name="Microsoft.KeyVault::vault(UML::Requirement)" type="" description="" unit="" values="" default="KeyVault"/>
-					<Tag name="Microsoft.Logic::workflow(UML::Requirement)" type="" description="" unit="" values="" default="LogicApp"/>
-					<Tag name="Microsoft.Management::managementGroup(UML::Requirement)" type="" description="" unit="" values="" default="ManagementGroup"/>
 					<Tag name="Microsoft.Network::azureFirewall(UML::Requirement)" type="" description="" unit="" values="" default="AzureFirewall"/>
 					<Tag name="Microsoft.Network::backAddressPool(UML::Requirement)" type="" description="" unit="" values="" default="BackendAddressPool"/>
+					<Tag name="Microsoft.Storage::sAbSContainer(UML::Requirement)" type="" description="" unit="" values="" default="BlobStorage"/>
+					<Tag name="Microsoft.AVS::cluster(UML::Requirement)" type="" description="" unit="" values="" default="Cluster"/>
+					<Tag name="Microsoft.ContainerService::agentPool(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAgentPool"/>
+					<Tag name="Microsoft.ContainerService::ContainerService(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAKS"/>
+					<Tag name="Microsoft.App::containerApp(UML::Requirement)" type="" description="" unit="" values="" default="ContainerApp"/>
+					<Tag name="Microsoft.ContainerService::managedCluster(UML::Requirement)" type="" description="" unit="" values="" default="ContainerManagedCluster"/>
+					<Tag name="Microsoft.ContainerRegistry::registry(UML::Requirement)" type="" description="" unit="" values="" default="ContainerRegistry"/>
+					<Tag name="Microsoft.DocumentDB::databaseAccount(UML::Requirement)" type="" description="" unit="" values="" default="CosmosDB"/>
+					<Tag name="Microsoft.Databricks::dbworkspace(UML::Requirement)" type="" description="" unit="" values="" default="Databricks workspace"/>
+					<Tag name="Microsoft.Compute::disk(UML::Requirement)" type="" description="" unit="" values="" default="Disk"/>
 					<Tag name="Microsoft.Network::dnszone(UML::Requirement)" type="" description="" unit="" values="" default="Dnszone"/>
+					<Tag name="Microsoft.EventGrid::eventGrid(UML::Requirement)" type="" description="" unit="" values="" default="EventGrid"/>
+					<Tag name="Microsoft.EventHub::namespace(UML::Requirement)" type="" description="" unit="" values="" default="Eventhub"/>
+					<Tag name="Microsoft.DataFactory::factory(UML::Requirement)" type="" description="" unit="" values="" default="Factory"/>
+					<Tag name="Microsoft.Storage::sAfSShare(UML::Requirement)" type="" description="" unit="" values="" default="FileshareStorage"/>
 					<Tag name="Microsoft.Network::frontdoor(UML::Requirement)" type="" description="" unit="" values="" default="Frontdoor"/>
 					<Tag name="Microsoft.Network::frontendEndpoint(UML::Requirement)" type="" description="" unit="" values="" default="FrontendEndpoint"/>
 					<Tag name="Microsoft.Network::frontEndIpConfig(UML::Requirement)" type="" description="" unit="" values="" default="FrontendIPConfiguration"/>
-					<Tag name="Microsoft.Network::frontWebAppFirePol(UML::Requirement)" type="" description="" unit="" values="" default="WAFPolicy"/>
+					<Tag name="Microsoft.Compute::galleriesImage(UML::Requirement)" type="" description="" unit="" values="" default="GalleriesImage"/>
+					<Tag name="Microsoft.Compute::gallery(UML::Requirement)" type="" description="" unit="" values="" default="Gallery"/>
+					<Tag name="Microsoft.Compute::image(UML::Requirement)" type="" description="" unit="" values="" default="Image"/>
 					<Tag name="Microsoft.Network::ipConfiguration(UML::Requirement)" type="" description="" unit="" values="" default="IpConfiguration"/>
+					<Tag name="Microsoft.KeyVault::vault(UML::Requirement)" type="" description="" unit="" values="" default="KeyVault"/>
 					<Tag name="Microsoft.Network::loadBalancer(UML::Requirement)" type="" description="" unit="" values="" default="LoadBalancer"/>
+					<Tag name="Microsoft.OperationalInsights::workspace(UML::Requirement)" type="" description="" unit="" values="" default="LogAnalytics"/>
+					<Tag name="Microsoft.Logic::workflow(UML::Requirement)" type="" description="" unit="" values="" default="LogicApp"/>
+					<Tag name="Microsoft.Management::managementGroup(UML::Requirement)" type="" description="" unit="" values="" default="ManagementGroup"/>
 					<Tag name="Microsoft.Network::networkInterface(UML::Requirement)" type="" description="" unit="" values="" default="NetworkInterface"/>
 					<Tag name="Microsoft.Network::networkSecurityGroup(UML::Requirement)" type="" description="" unit="" values="" default="NetworkSecurityGroup"/>
-					<Tag name="Microsoft.Network::pDzVnLink(UML::Requirement)" type="" description="" unit="" values="" default="PrivateLink"/>
+					<Tag name="Microsoft.DBforPostgreSQL::flexibleServer(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL flexServer"/>
+					<Tag name="Microsoft.AVS::privateCloud(UML::Requirement)" type="" description="" unit="" values="" default="PrivateCloud"/>
 					<Tag name="Microsoft.Network::privateDnsZone(UML::Requirement)" type="" description="" unit="" values="" default="PrivateDnsZone"/>
 					<Tag name="Microsoft.Network::privateEndpoint(UML::Requirement)" type="" description="" unit="" values="" default="PrivateEndpoint"/>
+					<Tag name="Microsoft.Storage::privEndpointConn(UML::Requirement)" type="" description="" unit="" values="" default="PrivateEndpointConnection"/>
+					<Tag name="Microsoft.Network::pDzVnLink(UML::Requirement)" type="" description="" unit="" values="" default="PrivateLink"/>
+					<Tag name="Microsoft.Cdn::profile(UML::Requirement)" type="" description="" unit="" values="" default="Profile"/>
 					<Tag name="Microsoft.Network::publicIPAddress(UML::Requirement)" type="" description="" unit="" values="" default="PublicIPAddress"/>
 					<Tag name="Microsoft.Network::publicIPPrefix(UML::Requirement)" type="" description="" unit="" values="" default="PublicIPPrefix"/>
-					<Tag name="Microsoft.Network::subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
-					<Tag name="Microsoft.Network::virtualHub(UML::Requirement)" type="" description="" unit="" values="" default="VirtualHub"/>
-					<Tag name="Microsoft.Network::virtualNetwork(UML::Requirement)" type="" description="" unit="" values="" default="VirtualNetwork"/>
-					<Tag name="Microsoft.Network::virtualWan(UML::Requirement)" type="" description="" unit="" values="" default="VirtualWan"/>
-					<Tag name="Microsoft.Network::vpnGateway(UML::Requirement)" type="" description="" unit="" values="" default="VpnGateway"/>
-					<Tag name="Microsoft.Network::vpnSite(UML::Requirement)" type="" description="" unit="" values="" default="VpnSite"/>
-					<Tag name="Microsoft.OperationalInsights::workspace(UML::Requirement)" type="" description="" unit="" values="" default="LogAnalytics"/>
+					<Tag name="Microsoft.Storage::sAqSQueue(UML::Requirement)" type="" description="" unit="" values="" default="QueueStorage"/>
 					<Tag name="Microsoft.RedHatOpenShift::openShiftCluster(UML::Requirement)" type="" description="" unit="" values="" default="Red Hat Openshift cluster"/>
 					<Tag name="Microsoft.Resources::resourceGroup(UML::Requirement)" type="" description="" unit="" values="" default="ResourceGroup"/>
 					<Tag name="Microsoft.ServiceBus::serviceBus(UML::Requirement)" type="" description="" unit="" values="" default="ServiceBus"/>
-					<Tag name="Microsoft.Sql::server(UML::Requirement)" type="" description="" unit="" values="" default="SQLServer"/>
 					<Tag name="Microsoft.Sql::serversDatabase(UML::Requirement)" type="" description="" unit="" values="" default="SQLDatabase"/>
-					<Tag name="Microsoft.Storage::privEndpointConn(UML::Requirement)" type="" description="" unit="" values="" default="PrivateEndpointConnection"/>
-					<Tag name="Microsoft.Storage::sAbSContainer(UML::Requirement)" type="" description="" unit="" values="" default="BlobStorage"/>
-					<Tag name="Microsoft.Storage::sAfSShare(UML::Requirement)" type="" description="" unit="" values="" default="FileshareStorage"/>
-					<Tag name="Microsoft.Storage::sAqSQueue(UML::Requirement)" type="" description="" unit="" values="" default="QueueStorage"/>
+					<Tag name="Microsoft.Sql::server(UML::Requirement)" type="" description="" unit="" values="" default="SQLServer"/>
+					<Tag name="Microsoft.Web::site(UML::Requirement)" type="" description="" unit="" values="" default="Site"/>
 					<Tag name="Microsoft.Storage::storageAccount(UML::Requirement)" type="" description="" unit="" values="" default="StorageAccount"/>
 					<Tag name="Microsoft.Synapse::workspace(UML::Requirement)" type="" description="" unit="" values="" default="SynapseAnalytics"/>
-					<Tag name="Microsoft.Web::serverFarm(UML::Requirement)" type="" description="" unit="" values="" default="AppServicePlan"/>
-					<Tag name="Microsoft.Web::site(UML::Requirement)" type="" description="" unit="" values="" default="Site"/>
+					<Tag name="Microsoft.Network::subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
 					<Tag name="subscription::subscription(UML::Requirement)" type="" description="" unit="" values="" default="Subscription"/>
+					<Tag name="Microsoft.Network::vpnGateway(UML::Requirement)" type="" description="" unit="" values="" default="VpnGateway"/>
+					<Tag name="Microsoft.Network::vpnSite(UML::Requirement)" type="" description="" unit="" values="" default="VpnSite"/>
+					<Tag name="Microsoft.Network::virtualHub(UML::Requirement)" type="" description="" unit="" values="" default="VirtualHub"/>
+					<Tag name="Microsoft.Compute::virtualMachine(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachine"/>
+					<Tag name="Microsoft.Compute::virtualMachineScaleSet(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachineScaleSet"/>
+					<Tag name="Microsoft.Network::virtualNetwork(UML::Requirement)" type="" description="" unit="" values="" default="VirtualNetwork"/>
+					<Tag name="Microsoft.Network::virtualWan(UML::Requirement)" type="" description="" unit="" values="" default="VirtualWan"/>
+					<Tag name="Microsoft.Network::frontWebAppFirePol(UML::Requirement)" type="" description="" unit="" values="" default="WAFPolicy"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>
@@ -2379,10 +2792,10 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="361438F64E" name="ACH_Capa_de_Seguridad" version="1.0" alias="Capa de Seguridad" notes="Alias=Capa de Seguridad;"/>
+	<Documentation id="361438F64E" name="ACH_Capa_de_Seguridad" version="1.0" alias="Vista de Seguridad" notes="Alias=Vista de Seguridad;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -2399,6 +2812,21 @@ AAEAPgAAAAICAAAAAA==
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
+					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
+					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
+					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
+					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
+					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>

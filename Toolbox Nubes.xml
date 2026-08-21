@@ -49,13 +49,12 @@
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="AWS_Arquesoft::AWS-AZ(UML::Requirement)" type="" description="" unit="" values="" default="Availability Zone"/>
-					<Tag name="AWS_Arquesoft::AWS-Region(UML::Requirement)" type="" description="" unit="" values="" default="Region"/>
-					<Tag name="AWS_Arquesoft::AWS Account(UML::Requirement)" type="" description="" unit="" values="" default="AWS Account"/>
 					<Tag name="AWS_Arquesoft::AWS ACM Certificate(UML::Requirement)" type="" description="" unit="" values="" default="ACM Certificate"/>
 					<Tag name="AWS_Arquesoft::AWS API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
 					<Tag name="AWS_Arquesoft::AWS Aurora Database(UML::Requirement)" type="" description="" unit="" values="" default="Aurora Database"/>
 					<Tag name="AWS_Arquesoft::AWS Auto Scaling Group(UML::Requirement)" type="" description="" unit="" values="" default="Auto Scaling Group"/>
+					<Tag name="AWS_Arquesoft::AWS-AZ(UML::Requirement)" type="" description="" unit="" values="" default="Availability Zone"/>
+					<Tag name="AWS_Arquesoft::AWS Account(UML::Requirement)" type="" description="" unit="" values="" default="AWS Account"/>
 					<Tag name="AWS_Arquesoft::AWS CloudFront Distribution(UML::Requirement)" type="" description="" unit="" values="" default="CloudFront Distribution"/>
 					<Tag name="AWS_Arquesoft::AWS CloudTrail(UML::Requirement)" type="" description="" unit="" values="" default="CloudTrail"/>
 					<Tag name="AWS_Arquesoft::AWS CodeBuild Project(UML::Requirement)" type="" description="" unit="" values="" default="CodeBuild Project"/>
@@ -68,9 +67,9 @@
 					<Tag name="AWS_Arquesoft::AWS ECS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="ECS Cluster"/>
 					<Tag name="AWS_Arquesoft::AWS EFS Access Point(UML::Requirement)" type="" description="" unit="" values="" default="EFS Access Point"/>
 					<Tag name="AWS_Arquesoft::AWS EFS Filesystem(UML::Requirement)" type="" description="" unit="" values="" default="EFS Filesystem"/>
+					<Tag name="AWS_Arquesoft::AWS EKS(UML::Requirement)" type="" description="" unit="" values="" default="EKS"/>
 					<Tag name="AWS_Arquesoft::AWS EKS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="EKS Cluster"/>
 					<Tag name="AWS_Arquesoft::AWS EKS Container(UML::Requirement)" type="" description="" unit="" values="" default="EKS Container"/>
-					<Tag name="AWS_Arquesoft::AWS EKS(UML::Requirement)" type="" description="" unit="" values="" default="EKS"/>
 					<Tag name="AWS_Arquesoft::AWS Elastic IP Address(UML::Requirement)" type="" description="" unit="" values="" default="Elastic IP Address"/>
 					<Tag name="AWS_Arquesoft::AWS Event Bridge(UML::Requirement)" type="" description="" unit="" values="" default="Event Bridge"/>
 					<Tag name="AWS_Arquesoft::AWS Event Bus(UML::Requirement)" type="" description="" unit="" values="" default="Event Bus"/>
@@ -89,15 +88,17 @@
 					<Tag name="AWS_Arquesoft::AWS Pod(UML::Requirement)" type="" description="" unit="" values="" default="Pod"/>
 					<Tag name="AWS_Arquesoft::AWS PostgreSQL Instance(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL Instance"/>
 					<Tag name="AWS_Arquesoft::AWS RDS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="RDS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS RestApi(UML::Requirement)" type="" description="" unit="" values="" default="Rest API"/>
+					<Tag name="AWS_Arquesoft::AWS VPN(UML::Requirement)" type="" description="" unit="" values="" default="VPN"/>
 					<Tag name="AWS_Arquesoft::AWS RDS Instance(UML::Requirement)" type="" description="" unit="" values="" default="RDS Instance"/>
 					<Tag name="AWS_Arquesoft::AWS RDS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="RDS Security Group"/>
-					<Tag name="AWS_Arquesoft::AWS RestApi(UML::Requirement)" type="" description="" unit="" values="" default="Rest API"/>
+					<Tag name="AWS_Arquesoft::AWS-Region(UML::Requirement)" type="" description="" unit="" values="" default="Region"/>
 					<Tag name="AWS_Arquesoft::AWS Route Table(UML::Requirement)" type="" description="" unit="" values="" default="Route Table"/>
-					<Tag name="AWS_Arquesoft::AWS S3 Access Point(UML::Requirement)" type="" description="" unit="" values="" default="S3 Access Point"/>
 					<Tag name="AWS_Arquesoft::AWS S3 Bucket(UML::Requirement)" type="" description="" unit="" values="" default="S3 Bucket"/>
 					<Tag name="AWS_Arquesoft::AWS Secret(UML::Requirement)" type="" description="" unit="" values="" default="Secret"/>
 					<Tag name="AWS_Arquesoft::AWS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Security Group"/>
 					<Tag name="AWS_Arquesoft::AWS SNS Topic(UML::Requirement)" type="" description="" unit="" values="" default="SNS Topic"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Access Point(UML::Requirement)" type="" description="" unit="" values="" default="S3 Access Point"/>
 					<Tag name="AWS_Arquesoft::AWS SQS Queue(UML::Requirement)" type="" description="" unit="" values="" default="SQS Queue"/>
 					<Tag name="AWS_Arquesoft::AWS Statemachine(UML::Requirement)" type="" description="" unit="" values="" default="Statemachine"/>
 					<Tag name="AWS_Arquesoft::AWS Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
@@ -105,10 +106,9 @@
 					<Tag name="AWS_Arquesoft::AWS Transit Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Transit Gateway"/>
 					<Tag name="AWS_Arquesoft::AWS UserPool(UML::Requirement)" type="" description="" unit="" values="" default="User Pool"/>
 					<Tag name="AWS_Arquesoft::AWS Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
-					<Tag name="AWS_Arquesoft::AWS VPC Endpoint Service(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint Service"/>
-					<Tag name="AWS_Arquesoft::AWS VPC Endpoint(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint"/>
 					<Tag name="AWS_Arquesoft::AWS VPC(UML::Requirement)" type="" description="" unit="" values="" default="VPC"/>
-					<Tag name="AWS_Arquesoft::AWS VPN(UML::Requirement)" type="" description="" unit="" values="" default="VPN"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint Service(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint Service"/>
 					<Tag name="AWS_Arquesoft::AWS WAF(UML::Requirement)" type="" description="" unit="" values="" default="WAF"/>
 					<Tag name="AWS_Arquesoft::AWS WebACL(UML::Requirement)" type="" description="" unit="" values="" default="Web ACL"/>
 					<Tag name="AWS_Arquesoft::AWS WorkGroup(UML::Requirement)" type="" description="" unit="" values="" default="WorkGroup"/>
@@ -148,71 +148,71 @@
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="Microsoft.ApiManagement::service(UML::Requirement)" type="" description="" unit="" values="" default="APIManagement"/>
-					<Tag name="Microsoft.App::containerApp(UML::Requirement)" type="" description="" unit="" values="" default="ContainerApp"/>
-					<Tag name="Microsoft.AVS::cluster(UML::Requirement)" type="" description="" unit="" values="" default="Cluster"/>
-					<Tag name="Microsoft.AVS::privateCloud(UML::Requirement)" type="" description="" unit="" values="" default="PrivateCloud"/>
 					<Tag name="Microsoft.AzureActiveDirectory::activeDirectory(UML::Requirement)" type="" description="" unit="" values="" default="ActiveDirectory"/>
 					<Tag name="Microsoft.AzureActiveDirectory::b2cDirectory(UML::Requirement)" type="" description="" unit="" values="" default="AD B2C"/>
-					<Tag name="Microsoft.Cdn::profile(UML::Requirement)" type="" description="" unit="" values="" default="Profile"/>
-					<Tag name="Microsoft.Compute::disk(UML::Requirement)" type="" description="" unit="" values="" default="Disk"/>
-					<Tag name="Microsoft.Compute::galleriesImage(UML::Requirement)" type="" description="" unit="" values="" default="GalleriesImage"/>
-					<Tag name="Microsoft.Compute::gallery(UML::Requirement)" type="" description="" unit="" values="" default="Gallery"/>
-					<Tag name="Microsoft.Compute::image(UML::Requirement)" type="" description="" unit="" values="" default="Image"/>
-					<Tag name="Microsoft.Compute::virtualMachine(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachine"/>
-					<Tag name="Microsoft.Compute::virtualMachineScaleSet(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachineScaleSet"/>
-					<Tag name="Microsoft.ContainerRegistry::registry(UML::Requirement)" type="" description="" unit="" values="" default="ContainerRegistry"/>
-					<Tag name="Microsoft.ContainerService::agentPool(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAgentPool"/>
-					<Tag name="Microsoft.ContainerService::ContainerService(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAKS"/>
-					<Tag name="Microsoft.ContainerService::managedCluster(UML::Requirement)" type="" description="" unit="" values="" default="ContainerManagedCluster"/>
-					<Tag name="Microsoft.Databricks::dbworkspace(UML::Requirement)" type="" description="" unit="" values="" default="Databricks workspace"/>
-					<Tag name="Microsoft.DataFactory::factory(UML::Requirement)" type="" description="" unit="" values="" default="Factory"/>
-					<Tag name="Microsoft.DBforPostgreSQL::flexibleServer(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL flexServer"/>
+					<Tag name="Microsoft.ApiManagement::service(UML::Requirement)" type="" description="" unit="" values="" default="APIManagement"/>
+					<Tag name="Microsoft.Web::serverFarm(UML::Requirement)" type="" description="" unit="" values="" default="AppServicePlan"/>
 					<Tag name="Microsoft.DesktopVirtualization::applicationgroup(UML::Requirement)" type="" description="" unit="" values="" default="AVDApplicationGroups"/>
 					<Tag name="Microsoft.DesktopVirtualization::hostpool(UML::Requirement)" type="" description="" unit="" values="" default="AVDHostpool"/>
-					<Tag name="Microsoft.DocumentDB::databaseAccount(UML::Requirement)" type="" description="" unit="" values="" default="CosmosDB"/>
-					<Tag name="Microsoft.EventGrid::eventGrid(UML::Requirement)" type="" description="" unit="" values="" default="EventGrid"/>
-					<Tag name="Microsoft.EventHub::namespace(UML::Requirement)" type="" description="" unit="" values="" default="Eventhub"/>
-					<Tag name="Microsoft.KeyVault::vault(UML::Requirement)" type="" description="" unit="" values="" default="KeyVault"/>
-					<Tag name="Microsoft.Logic::workflow(UML::Requirement)" type="" description="" unit="" values="" default="LogicApp"/>
-					<Tag name="Microsoft.Management::managementGroup(UML::Requirement)" type="" description="" unit="" values="" default="ManagementGroup"/>
 					<Tag name="Microsoft.Network::azureFirewall(UML::Requirement)" type="" description="" unit="" values="" default="AzureFirewall"/>
 					<Tag name="Microsoft.Network::backAddressPool(UML::Requirement)" type="" description="" unit="" values="" default="BackendAddressPool"/>
+					<Tag name="Microsoft.Storage::sAbSContainer(UML::Requirement)" type="" description="" unit="" values="" default="BlobStorage"/>
+					<Tag name="Microsoft.AVS::cluster(UML::Requirement)" type="" description="" unit="" values="" default="Cluster"/>
+					<Tag name="Microsoft.ContainerService::agentPool(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAgentPool"/>
+					<Tag name="Microsoft.ContainerService::ContainerService(UML::Requirement)" type="" description="" unit="" values="" default="ContainerAKS"/>
+					<Tag name="Microsoft.App::containerApp(UML::Requirement)" type="" description="" unit="" values="" default="ContainerApp"/>
+					<Tag name="Microsoft.ContainerService::managedCluster(UML::Requirement)" type="" description="" unit="" values="" default="ContainerManagedCluster"/>
+					<Tag name="Microsoft.ContainerRegistry::registry(UML::Requirement)" type="" description="" unit="" values="" default="ContainerRegistry"/>
+					<Tag name="Microsoft.DocumentDB::databaseAccount(UML::Requirement)" type="" description="" unit="" values="" default="CosmosDB"/>
+					<Tag name="Microsoft.Databricks::dbworkspace(UML::Requirement)" type="" description="" unit="" values="" default="Databricks workspace"/>
+					<Tag name="Microsoft.Compute::disk(UML::Requirement)" type="" description="" unit="" values="" default="Disk"/>
 					<Tag name="Microsoft.Network::dnszone(UML::Requirement)" type="" description="" unit="" values="" default="Dnszone"/>
+					<Tag name="Microsoft.EventGrid::eventGrid(UML::Requirement)" type="" description="" unit="" values="" default="EventGrid"/>
+					<Tag name="Microsoft.EventHub::namespace(UML::Requirement)" type="" description="" unit="" values="" default="Eventhub"/>
+					<Tag name="Microsoft.DataFactory::factory(UML::Requirement)" type="" description="" unit="" values="" default="Factory"/>
+					<Tag name="Microsoft.Storage::sAfSShare(UML::Requirement)" type="" description="" unit="" values="" default="FileshareStorage"/>
 					<Tag name="Microsoft.Network::frontdoor(UML::Requirement)" type="" description="" unit="" values="" default="Frontdoor"/>
 					<Tag name="Microsoft.Network::frontendEndpoint(UML::Requirement)" type="" description="" unit="" values="" default="FrontendEndpoint"/>
 					<Tag name="Microsoft.Network::frontEndIpConfig(UML::Requirement)" type="" description="" unit="" values="" default="FrontendIPConfiguration"/>
-					<Tag name="Microsoft.Network::frontWebAppFirePol(UML::Requirement)" type="" description="" unit="" values="" default="WAFPolicy"/>
+					<Tag name="Microsoft.Compute::galleriesImage(UML::Requirement)" type="" description="" unit="" values="" default="GalleriesImage"/>
+					<Tag name="Microsoft.Compute::gallery(UML::Requirement)" type="" description="" unit="" values="" default="Gallery"/>
+					<Tag name="Microsoft.Compute::image(UML::Requirement)" type="" description="" unit="" values="" default="Image"/>
 					<Tag name="Microsoft.Network::ipConfiguration(UML::Requirement)" type="" description="" unit="" values="" default="IpConfiguration"/>
+					<Tag name="Microsoft.KeyVault::vault(UML::Requirement)" type="" description="" unit="" values="" default="KeyVault"/>
 					<Tag name="Microsoft.Network::loadBalancer(UML::Requirement)" type="" description="" unit="" values="" default="LoadBalancer"/>
+					<Tag name="Microsoft.OperationalInsights::workspace(UML::Requirement)" type="" description="" unit="" values="" default="LogAnalytics"/>
+					<Tag name="Microsoft.Logic::workflow(UML::Requirement)" type="" description="" unit="" values="" default="LogicApp"/>
+					<Tag name="Microsoft.Management::managementGroup(UML::Requirement)" type="" description="" unit="" values="" default="ManagementGroup"/>
 					<Tag name="Microsoft.Network::networkInterface(UML::Requirement)" type="" description="" unit="" values="" default="NetworkInterface"/>
 					<Tag name="Microsoft.Network::networkSecurityGroup(UML::Requirement)" type="" description="" unit="" values="" default="NetworkSecurityGroup"/>
-					<Tag name="Microsoft.Network::pDzVnLink(UML::Requirement)" type="" description="" unit="" values="" default="PrivateLink"/>
+					<Tag name="Microsoft.DBforPostgreSQL::flexibleServer(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL flexServer"/>
+					<Tag name="Microsoft.AVS::privateCloud(UML::Requirement)" type="" description="" unit="" values="" default="PrivateCloud"/>
 					<Tag name="Microsoft.Network::privateDnsZone(UML::Requirement)" type="" description="" unit="" values="" default="PrivateDnsZone"/>
 					<Tag name="Microsoft.Network::privateEndpoint(UML::Requirement)" type="" description="" unit="" values="" default="PrivateEndpoint"/>
+					<Tag name="Microsoft.Storage::privEndpointConn(UML::Requirement)" type="" description="" unit="" values="" default="PrivateEndpointConnection"/>
+					<Tag name="Microsoft.Network::pDzVnLink(UML::Requirement)" type="" description="" unit="" values="" default="PrivateLink"/>
+					<Tag name="Microsoft.Cdn::profile(UML::Requirement)" type="" description="" unit="" values="" default="Profile"/>
 					<Tag name="Microsoft.Network::publicIPAddress(UML::Requirement)" type="" description="" unit="" values="" default="PublicIPAddress"/>
 					<Tag name="Microsoft.Network::publicIPPrefix(UML::Requirement)" type="" description="" unit="" values="" default="PublicIPPrefix"/>
-					<Tag name="Microsoft.Network::subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
-					<Tag name="Microsoft.Network::virtualHub(UML::Requirement)" type="" description="" unit="" values="" default="VirtualHub"/>
-					<Tag name="Microsoft.Network::virtualNetwork(UML::Requirement)" type="" description="" unit="" values="" default="VirtualNetwork"/>
-					<Tag name="Microsoft.Network::virtualWan(UML::Requirement)" type="" description="" unit="" values="" default="VirtualWan"/>
-					<Tag name="Microsoft.Network::vpnGateway(UML::Requirement)" type="" description="" unit="" values="" default="VpnGateway"/>
-					<Tag name="Microsoft.Network::vpnSite(UML::Requirement)" type="" description="" unit="" values="" default="VpnSite"/>
-					<Tag name="Microsoft.OperationalInsights::workspace(UML::Requirement)" type="" description="" unit="" values="" default="LogAnalytics"/>
+					<Tag name="Microsoft.Storage::sAqSQueue(UML::Requirement)" type="" description="" unit="" values="" default="QueueStorage"/>
 					<Tag name="Microsoft.RedHatOpenShift::openShiftCluster(UML::Requirement)" type="" description="" unit="" values="" default="Red Hat Openshift cluster"/>
 					<Tag name="Microsoft.Resources::resourceGroup(UML::Requirement)" type="" description="" unit="" values="" default="ResourceGroup"/>
 					<Tag name="Microsoft.ServiceBus::serviceBus(UML::Requirement)" type="" description="" unit="" values="" default="ServiceBus"/>
-					<Tag name="Microsoft.Sql::server(UML::Requirement)" type="" description="" unit="" values="" default="SQLServer"/>
 					<Tag name="Microsoft.Sql::serversDatabase(UML::Requirement)" type="" description="" unit="" values="" default="SQLDatabase"/>
-					<Tag name="Microsoft.Storage::privEndpointConn(UML::Requirement)" type="" description="" unit="" values="" default="PrivateEndpointConnection"/>
-					<Tag name="Microsoft.Storage::sAbSContainer(UML::Requirement)" type="" description="" unit="" values="" default="BlobStorage"/>
-					<Tag name="Microsoft.Storage::sAfSShare(UML::Requirement)" type="" description="" unit="" values="" default="FileshareStorage"/>
-					<Tag name="Microsoft.Storage::sAqSQueue(UML::Requirement)" type="" description="" unit="" values="" default="QueueStorage"/>
+					<Tag name="Microsoft.Sql::server(UML::Requirement)" type="" description="" unit="" values="" default="SQLServer"/>
+					<Tag name="Microsoft.Web::site(UML::Requirement)" type="" description="" unit="" values="" default="Site"/>
 					<Tag name="Microsoft.Storage::storageAccount(UML::Requirement)" type="" description="" unit="" values="" default="StorageAccount"/>
 					<Tag name="Microsoft.Synapse::workspace(UML::Requirement)" type="" description="" unit="" values="" default="SynapseAnalytics"/>
-					<Tag name="Microsoft.Web::serverFarm(UML::Requirement)" type="" description="" unit="" values="" default="AppServicePlan"/>
-					<Tag name="Microsoft.Web::site(UML::Requirement)" type="" description="" unit="" values="" default="Site"/>
+					<Tag name="Microsoft.Network::subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
 					<Tag name="subscription::subscription(UML::Requirement)" type="" description="" unit="" values="" default="Subscription"/>
+					<Tag name="Microsoft.Network::vpnGateway(UML::Requirement)" type="" description="" unit="" values="" default="VpnGateway"/>
+					<Tag name="Microsoft.Network::vpnSite(UML::Requirement)" type="" description="" unit="" values="" default="VpnSite"/>
+					<Tag name="Microsoft.Network::virtualHub(UML::Requirement)" type="" description="" unit="" values="" default="VirtualHub"/>
+					<Tag name="Microsoft.Compute::virtualMachine(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachine"/>
+					<Tag name="Microsoft.Compute::virtualMachineScaleSet(UML::Requirement)" type="" description="" unit="" values="" default="VirtualMachineScaleSet"/>
+					<Tag name="Microsoft.Network::virtualNetwork(UML::Requirement)" type="" description="" unit="" values="" default="VirtualNetwork"/>
+					<Tag name="Microsoft.Network::virtualWan(UML::Requirement)" type="" description="" unit="" values="" default="VirtualWan"/>
+					<Tag name="Microsoft.Network::frontWebAppFirePol(UML::Requirement)" type="" description="" unit="" values="" default="WAFPolicy"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>
