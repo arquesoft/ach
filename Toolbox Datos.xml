@@ -1,9 +1,9 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <UMLProfile profiletype="uml2">
-	<Documentation id="392C71949D" name="ACH_Capa_de_Datos" version="1.0" alias="Capa de Datos" notes="Alias=Capa de Datos;"/>
+	<Documentation id="392C71949D" name="ACH_Capa_de_Datos" version="1.0" alias="Vista de Datos" notes="Alias=Vista de Datos;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>

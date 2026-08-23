@@ -1,8 +1,8 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <MDG.Technology version="1.0"><Documentation id="ACHMDG" name="ACH" version="1.0" notes="MDG Technology for ACH - Developed by Arquesoft" supportURI="support@arquesoft.com"/><Logo><Image type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk1ayQAAAAAAAIoAAAB8AAAAzAAAAFQAAAABABgAAAAAANDIAAAjLgAAIy4A
-AAAAAAAAAAAAZQAgAHAAcgBvAGYAaQBsAGUAdAB5AHAAZQA9ACIAdQBtAGwA
-MgAiAD4ADQAKAAkAPABEAG8AYwB1AG0AZQBuAHQAYQB0AGkAbwBuACAAaQBk
-AD0A////////////////////////////////////////////////////////
+AAAAAAAAAAAA+IetapUBAADQY1pqlQEAAAgA0cX8fwAA+C/Rxfx/AAD4h61q
+lQEAAEAnIWaVAQAAAAAAAAAAAACQLdHF/H8AADCIrWqVAQAA8H9aapUBAAAA
+kK1q////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 /////////f7//f///f///f7/////////////////////////////////////
 /////////////////////////////////////////////f7/////////////
@@ -1168,7 +1168,6 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 	<Documentation id="7D149D7EF9" name="ACH" version="1.0" notes="ACH"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="ACH::Componente de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" isAbstract="true"/>
 			<Stereotype name="Agrupamiento Nube" metatype="Despliegue Nube" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
 				<AppliesTo>
 					<Apply type="Boundary"/>
@@ -1204,6 +1203,7 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Asociación" metatype="Asociación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1217,7 +1217,7 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Balanceador" metatype="Balanceador" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
+			<Stereotype name="Balanceador" metatype="Balanceador" notes="" cx="0" cy="0" bgcolor="9830293" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Device" baseStereotypes="ArchiMate3::ArchiMate_Device">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -1225,6 +1225,7 @@ pl4D////pl4Dpl4Dpl4D////////////////////////pl4D////////////
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Base de datos física" metatype="Base de datos física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1273,6 +1274,7 @@ oT1qUEsFBgAAAAABAAEAPgAAAJUCAAAAAA==
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Base de datos lógica" metatype="Base de datos lógica" instanceType="Base de datos física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -1399,8 +1401,8 @@ vb29wMDAwMDAwMDAvb29f4WGQqa1XOH1Xub7T8PVT8PVXub7XOH1Qqa1gIWG
 vb29wMDAwMDAwMDAwMDAwMDAwMDArq6ugYGBW4ePPJWjPJakWYeQgICArq6u
 wMDAwMDAwMDAwMDA
 </Icon>
-				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOCh/lxIeNRw4gIAAPAIAAAHABEAc3RyLmRhdFVUDQAH1LBr
-atSwa2rUsGtqnVbbbhMxEJ1nJP5hlbwsEi1NuQiBeEhDipBKiGglHhBCmwup
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIABRxEl1IeNRw4gIAAPAIAAAHABEAc3RyLmRhdFVUDQAHemeE
+anpnhGp6Z4RqnVbbbhMxEJ1nJP5hlbwsEi1NuQiBeEhDipBKiGglHhBCmwup
 UbOEzbaqQHwRn8DX5AP4B86Zsdk7oMqK1x57PGfOjMfZyrkkspGlRLLGyEmK
 0Te5LbfwtXYPLZKB7KN/jp0fdZeTDPO5fJYL/DLIt5jHOIPnZFi/0JUIp+8w
 crLQ2RzjHfY61Y0gpe0hNObA4uQVtHPI7lQwnEKSy7E/dfTHaiyH8hDtLvYU
@@ -1416,8 +1418,8 @@ URKpH4zZRiPyVeWWm5H88tlHVMwo6l/pjEiL+ui0uqwUM9G027R3hKfVGW17
 xabCm08d0w+4eJJZJdv0ksxyzurE2kGuDR1x0D/GhztimegKX4U9RJsZmdfy
 j+sBWxm91YQJtOq1oIl9pGhXHnOTI0O29S+qrZMRqxAZeKfEVqm383r2cpt8
 jOxpWn6JV3kqr/HqMLsm6MfIsO46NNMR4xJeNdafwF2EfxDkg8jJ9zW+9pbt
-V2wXvjG3+b8hMLgnjzQrN8Jbby/Cv14/y+zfUEsBAhcLFAAAAAgA4KH+XEh4
-1HDiAgAA8AgAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB9Swa2pQ
+V2wXvjG3+b8hMLgnjzQrN8Jbby/Cv14/y+zfUEsBAhcLFAAAAAgAFHESXUh4
+1HDiAgAA8AgAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB3pnhGpQ
 SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 </Image>
 				<AppliesTo>
@@ -1430,26 +1432,16 @@ SwUGAAAAAAEAAQA+AAAAGAMAAAAA
 					<Tag name="Tipo Cliente" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Componente de Actor de Negocio" metatype="Componente de Actor de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
-				<AppliesTo>
-					<Apply type="Component">
-						<Property name="isIndirectlyInstantiated" value="true"/>
-					</Apply>
-				</AppliesTo>
-			</Stereotype>
 			<Stereotype name="Componente de Negocio" metatype="Componente de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
-			</Stereotype>
-			<Stereotype name="Componente Interno de Negocio" metatype="Componente Interno de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ACH::Componente de Negocio" baseStereotypes="ACH::Componente%20de%20Negocio">
-				<AppliesTo>
-					<Apply type="Component">
-						<Property name="isIndirectlyInstantiated" value="true"/>
-					</Apply>
-				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Tipo Componente de Negocio" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Contenido" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Concepto de Arquitectura" metatype="Concepto de Arquitectura" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
@@ -1530,6 +1522,7 @@ wMDAwMDAwMDAwMDA
 					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Despliegue Nube" type="" description="" unit="" values="" default=""/>
@@ -1546,17 +1539,48 @@ wMDAwMDAwMDAwMDA
 					<Tag name="CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Cuenta Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otro CSP" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Ambiente Nube" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" instanceType="Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
+			<Stereotype name="Estructura de Negocio" metatype="Estructura de Negocio" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Grouping" baseStereotypes="ArchiMate3::ArchiMate_Grouping">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAH6IFV1PtkrtZgMAABAKAAAHABEAc3RyLmRhdFVUDQAH84SI
+avOEiGrzhIhqfZbdThRBEIXrVhLfYbPcQKIoaLzQeIEC0UTBiBd4ZfaPZXRh
+15kFQePD8gC8g+ermnZ2ZmfJZv66u6pOnTpdvYWdWc9mNrKOnestswu9/bGH
+tmYPyvuFTa3wdUO9/dL8a11zy+1Sdq9qa5/o17Ft29L9QKtz+y27XF+X7nms
+d7xxdWRdyM+tZoblqqEjmdidxkYa69iGvHWEMLNrjUxss4xU6GvuyC+EKZPl
+XBhZvdmKaccx7Wn9qWeZLaAaCM/E0QYmvA6EgZXMgeJQY4F+0/HE6kIrOsI5
+0EVWy9gq3xv21B5pdbq34wzumjjJHM4zj9zO057t2rG9s329RY1yzdw4MiLu
+2ZF90a+an3n+c69GndeJx4763OhrJP9drxJK6K7AnjjOrC/P3x1XIIefc/cJ
+elhr8h4Z5b6eeLFyw3XW0xdVQSPMzHVPeIkMSubgvFfqoEIY2BZREQ9Pg1J9
+Y42DIxCBjMx/ahSc5Bzr0T9ahfHgAoQnzu5Xv5+ofvEVT5APhGdq3xo+Y3bi
+7DfjpdxQGxUa/kdb19C2ns23nYVnk4OD0j/VZV+2V2e4wBQZVx7gfngPx8dl
+PaM79Gox+l7nqPKNRxnVFEJ06prrLRSxqvL1usPRD422oVrE9sy1+UGxyDU0
+ABOo8VLoosNFJ6QSqSOyC0Izt45p6pxQeTLlCaZrnyk8Yqf8wd5wyTv7qLKI
+rjJVBci621rVZj6LSFd5Sj08YUm/M+kw6j92ndMFurJJ3Ob6imhNy6tWSyLP
+Vtq0jUU1dr0a+84/qjsXR1Q4dMEo95HGA1n0AnZgZuz1vs9W+/VAeo9d04w3
+c0XhY6I77K/7HsDz+lInS1Z/y7EYjS+uxR79xhWQtAJu0KBZ+nTgCuWicrIj
+n5krMJ2KketdmQdZgg37K/9K5ww27BEUOXZOQNMeM84svN2vicjlk6FbbMI+
+4cJTRK33ptgvqK/aqeCIDoUy47Rkhv34WFWmU84b9WE+8zjUs0IfujqUVVNV
+y9jfOtpxiXmZo0BWlF0n5lFwaC0X74zELHa3pR02aXxfWl2O/N4+irkj+6zz
+dFdoOVVf+up2Rff9jbrAIlyj5OrcO3U+QA7f18Y/CnjZqsWuckPH9Og4ScFb
+iOkX9lyVuZbVzDjVop/cd2Ik9YfK1+wfUEsBAhcLFAAAAAgAfogVXU+2Su1m
+AwAAEAoAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB/OEiGpQSwUG
+AAAAAAEAAQA+AAAAnAMAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Boundary"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Ejecutable" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -1612,12 +1636,13 @@ wMDAwMDAwMDAwMDA
 					<Tag name="Tipo de Interfaz de Integración" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" instanceType="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
+			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
 				<AppliesTo>
 					<Apply type="Interface"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Herramienta Integración" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Otra Herramienta Integración" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -1635,7 +1660,7 @@ wMDAwMDAwMDAwMDA
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
-			<Stereotype name="Middleware" metatype="Middleware" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Middleware" metatype="Middleware" notes="" cx="0" cy="0" bgcolor="8781701" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -1643,9 +1668,10 @@ wMDAwMDAwMDAwMDA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Motor base de datos" metatype="Motor base de datos" instanceType="Sistema" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
+			<Stereotype name="Motor base de datos" metatype="Motor base de datos" notes="" cx="0" cy="0" bgcolor="7995257" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_SystemSoftware" baseStereotypes="ArchiMate3::ArchiMate_SystemSoftware">
 				<AppliesTo>
 					<Apply type="Class">
 						<Property name="isActive" value=""/>
@@ -1653,6 +1679,45 @@ wMDAwMDAwMDAwMDA
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Negocio" metatype="Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAHpxEl1bqJAzowIAAIYHAAAHABEAc3RyLmRhdFVUDQAHEWiE
+ahFohGoRaIRqhVXbbtNAEJ3XIvEPVvLiSjQl5SIBBSlAKiGVUCHekXMh3ap1
+XduUtqgfmw/oP3DOjBfHXhu0ynp2dud25uymkFNJJJOVRHIByUkK6bc8lkf4
+2tjHiGQsI8wfcfKHnnKSY72QSznHL4e+wDqGD/rJsX+uOxG8byA5WepqAXmD
+s05tI2gZewKLBXJx8hnWJXS7jRwKaEqNTK911FgO5AXGE5yppbG8wmpX3kAO
+vbDatOHjqVr5mXZ9Vr+0jhKZxojSPhmidlCh5mQuP+VMkYkQNxEikaiGCBEv
+5uQgJ9g3XPidQFtqntveiTf1CazWOLdqVTHGd1sKsQhzfaa5Hmt21sOoyqVA
+7nPMNVeuoPGcSSFZZRtomCs7TTYQX37ZzxvdKRpxE5xcBt5jGTQsZpDXkIjO
+Jfb66uurbjvvfr9t1vtxKt8VBYezvBtv8RvAhmygtxyrZmw/rjstGTvrtenS
+WXcm2p2p9iOFjwtgRhbUTOG8gt4yY0Ux5CXikydz3bUby2yO9IZ0xfNsLGGR
+ajcOMYZAzOpdwUMpt4roUN5hDP7iv4MR2g/xJad4vj7bjrutu9eVzfwZBs8V
+g/fKK89AVs+acuG7wU6yOt4iauymEJVMeX1X8doQe6jQIFbMkPbXusrUo7+p
+Tnm+VmSZTXdMe9Ho7d/MslpOhBykjdn7vOjJovJFZZXEkmveE2JOdC075mEv
+ARnOfs90h+/THriSaM+aXea+0zhkRZ29sXMGqzY3w9w/aLbrKucQI8usqN52
+2+c9MMbmwJ0a26XdprKz/xDTT8H4MPIn/D+cyBf5Kt+wP8M8ldd6uvtezFVi
+X/z7yvvgsYvwj0I8mDnxvsHXXtVRI3ZdG9nMl5yds3wLIP0SzMxgPcLM99je
+qP+9x57b9/IHUEsBAhcLFAAAAAgAenESXVuokDOjAgAAhgcAAAcACQAAAAAA
+AAAAAACAAAAAAHN0ci5kYXRVVAUABxFohGpQSwUGAAAAAAEAAQA+AAAA2QIA
+AAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Objeto de Negocio" metatype="Objeto de Negocio" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessObject" baseStereotypes="ArchiMate3::ArchiMate_BusinessObject">
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Valor" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Producto" metatype="Producto" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Product" baseStereotypes="ArchiMate3::ArchiMate_Product">
@@ -1780,6 +1845,7 @@ AAA=
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Estado Arquitectura" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Servidor" metatype="Servidor" notes="" cx="0" cy="0" bgcolor="12648384" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Node" baseStereotypes="ArchiMate3::ArchiMate_Node">
@@ -1797,6 +1863,7 @@ AAA=
 					<Tag name="Función" type="" description="" unit="" values="" default=""/>
 					<Tag name="Gerencia" type="" description="" unit="" values="" default=""/>
 					<Tag name="Hostname" type="" description="" unit="" values="" default=""/>
+					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="IP Principal" type="" description="" unit="" values="" default=""/>
 					<Tag name="Nube" type="" description="" unit="" values="" default=""/>
 					<Tag name="Rol Servidor" type="" description="" unit="" values="" default=""/>
@@ -1850,6 +1917,21 @@ AAEAPgAAAAICAAAAAA==
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Tipo Canal" metatype="Tipo Canal" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIALKKF11rbIRe4wEAAKQGAAAHABEAc3RyLmRhdFVUDQAHBSyL
+agUsi2oFLItqvVTLTsJAFD3bmvgPkxoTSIxi3GlcIDVqIhvs3lQoWlMqUkqM
+ho/1A1j5A557p7UgPgoL0nR6Z+Y+zjkzvSkeEGCIEAYDWhESbGMLbzqa/Bng
+CRP6jPmtoYE9rjVQx8mCV6zRhdchPb57znsf8DG4ZlSglQ3fmGOKDHccS1xd
+5kvQZ/Z77o243uOK4W6gM8NZlzt2bhgjeWz9XVo9zSJ1ZJwpxmAJi2TtLVWv
+wSWfEC/KqkUroTWi7Sq3kqW1CqbTL77zTNrkIFViznzmGJJ/wHqCuFTdYcSt
+qiGME8ad8nXJ0VYPWd/N6zg8l6q+1j+ikoa8LhmVEkXAOGHpc2eoura4lmhO
+y9FFkzvCeUKflK+ch5xalFcRNep8bIWChaNRcifGWqGJfeywThMXOMYVPM4k
+rmBiNXNUjVT1WgdrR+MDKrAuzs5GcHqqpdyliDcgU7wf9KmC0NsIwrbqJ/9z
+hNdc0aoI2xtB6Ov/n9C/T4+R9pFVUPorovw72/+Zyq5gu98R6xvcaO+STANV
+wnYqq/sz98SSFelj0tnO9d7Inx2StXiJPpL1t15zpn5y/wc/dpzFnuxx9xFF
+L7W1DGNixls8hp1AlJ7pucgJZDlqOwoTYSTR9jTEK8sRvCvmbkVOU3wCUEsB
+AhcLFAAAAAgAsooXXWtshF7jAQAApAYAAAcACQAAAAAAAAAAAACAAAAAAHN0
+ci5kYXRVVAUABwUsi2pQSwUGAAAAAAEAAQA+AAAAGQIAAAAA
+</Image>
 				<AppliesTo>
 					<Apply type="Association">
 						<Property name="compositionKind" value="none"/>
@@ -1933,16 +2015,18 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile></DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
-	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Capa de Aplicaciones" notes="Alias=Capa de Aplicaciones;"/>
+	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Vista Lógica de Aplicaciones" notes="Alias=Vista Lógica de Aplicaciones;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Aplicaciones" notes="" cx="281" cy="101" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
 					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
 					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
 					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
@@ -1963,10 +2047,10 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="392C71949D" name="ACH_Capa_de_Datos" version="1.0" alias="Capa de Datos" notes="Alias=Capa de Datos;"/>
+	<Documentation id="392C71949D" name="ACH_Capa_de_Datos" version="1.0" alias="Vista de Datos" notes="Alias=Vista de Datos;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -1997,26 +2081,31 @@ AAEAPgAAAAICAAAAAA==
 	<Documentation id="3FE0A06C22" name="ACH_General" version="1.0" alias="General" notes="Alias=General;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Aplicaciones" notes="" cx="281" cy="101" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
 					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
 					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
 					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>
@@ -2025,19 +2114,19 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="ACH::Servidor(UML::Class)" type="" description="" unit="" values="" default="Servidor"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Negocio" notes="" cx="272" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Negocio" notes="" cx="348" cy="231" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
+					<Tag name="ACH::Canal(UML::Interface)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente Actor(ACH::Class)" type="" description="" unit="" values="" default="Componente Actor"/>
-					<Tag name="ACH::Componente Interno(ACH::Class)" type="" description="" unit="" values="" default="Componente Interno"/>
-					<Tag name="ACH::Componente(UML::Class)" type="" description="" unit="" values="" default="Componente"/>
+					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
+					<Tag name="ACH::Estructura de Negocio(UML::Boundary)" type="" description="" unit="" values="" default="Estructura de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
+					<Tag name="ACH::Negocio(UML::Class)" type="" description="" unit="" values="" default="Negocio"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
 					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
 					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
@@ -2055,7 +2144,7 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Datos" notes="" cx="270" cy="114" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -2068,7 +2157,7 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="EAUML::view" type="" description="" unit="" values="" default="Vista"/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Capa de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -2085,17 +2174,20 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Capa de Infraestructura" notes="Alias=Capa de Infraestructura;"/>
+	<Documentation id="7B502EF036" name="ACH_Capa_de_Infraestructura" version="1.0" alias="Vista de Infraestructura" notes="Alias=Vista de Infraestructura;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Infraestructura" notes="" cx="305" cy="153" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Infraestructura" notes="" cx="342" cy="192" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="ACH::Agrupamiento Nube(UML::Boundary)" type="" description="" unit="" values="" default="Agrupamiento Nube"/>
 					<Tag name="ACH::Appliance(UML::Class)" type="" description="" unit="" values="" default="Appliance"/>
 					<Tag name="ACH::Balanceador(UML::Class)" type="" description="" unit="" values="" default="Balanceador"/>
 					<Tag name="ACH::Base de datos física(UML::Class)" type="" description="" unit="" values="" default="Base de datos física"/>
+					<Tag name="ACH::Elemento de Nube(UML::Class)" type="" description="" unit="" values="" default="Elemento de Nube"/>
+					<Tag name="ACH::Entorno Ejecucion Nube(UML::ExecutionEnvironment)" type="" description="" unit="" values="" default="Entorno de ejecución Nube"/>
 					<Tag name="ACH::Instancia de Aplicación(UML::Component)" type="" description="" unit="" values="" default="Instancia de Aplicación"/>
 					<Tag name="ACH::Interfaz de Integración Física(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración Física"/>
 					<Tag name="ACH::Middleware(UML::Class)" type="" description="" unit="" values="" default="Middleware"/>
@@ -2113,28 +2205,139 @@ AAEAPgAAAAICAAAAAA==
 					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
 				</TaggedValues>
 			</Stereotype>
+			<Stereotype name="ACH AWS" notes="" cx="378" cy="855" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="AWS_Arquesoft::AWS-AZ(UML::Requirement)" type="" description="" unit="" values="" default="Availability Zone"/>
+					<Tag name="AWS_Arquesoft::AWS-Region(UML::Requirement)" type="" description="" unit="" values="" default="Region"/>
+					<Tag name="AWS_Arquesoft::AWS Account(UML::Requirement)" type="" description="" unit="" values="" default="AWS Account"/>
+					<Tag name="AWS_Arquesoft::AWS ACM Certificate(UML::Requirement)" type="" description="" unit="" values="" default="ACM Certificate"/>
+					<Tag name="AWS_Arquesoft::AWS API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS Aurora Database(UML::Requirement)" type="" description="" unit="" values="" default="Aurora Database"/>
+					<Tag name="AWS_Arquesoft::AWS Auto Scaling Group(UML::Requirement)" type="" description="" unit="" values="" default="Auto Scaling Group"/>
+					<Tag name="AWS_Arquesoft::AWS CloudFront Distribution(UML::Requirement)" type="" description="" unit="" values="" default="CloudFront Distribution"/>
+					<Tag name="AWS_Arquesoft::AWS CloudTrail(UML::Requirement)" type="" description="" unit="" values="" default="CloudTrail"/>
+					<Tag name="AWS_Arquesoft::AWS CodeBuild Project(UML::Requirement)" type="" description="" unit="" values="" default="CodeBuild Project"/>
+					<Tag name="AWS_Arquesoft::AWS Cognito(UML::Requirement)" type="" description="" unit="" values="" default="Cognito"/>
+					<Tag name="AWS_Arquesoft::AWS Customer Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Customer Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS DynamoDB Table(UML::Requirement)" type="" description="" unit="" values="" default="DynamoDB Table"/>
+					<Tag name="AWS_Arquesoft::AWS EC2 Fleet(UML::Requirement)" type="" description="" unit="" values="" default="EC2 Fleet"/>
+					<Tag name="AWS_Arquesoft::AWS EC2 Instance(UML::Requirement)" type="" description="" unit="" values="" default="EC2 Instance"/>
+					<Tag name="AWS_Arquesoft::AWS ECR Repository(UML::Requirement)" type="" description="" unit="" values="" default="ECR Repository"/>
+					<Tag name="AWS_Arquesoft::AWS ECS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="ECS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS EFS Access Point(UML::Requirement)" type="" description="" unit="" values="" default="EFS Access Point"/>
+					<Tag name="AWS_Arquesoft::AWS EFS Filesystem(UML::Requirement)" type="" description="" unit="" values="" default="EFS Filesystem"/>
+					<Tag name="AWS_Arquesoft::AWS EKS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="EKS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS EKS Container(UML::Requirement)" type="" description="" unit="" values="" default="EKS Container"/>
+					<Tag name="AWS_Arquesoft::AWS EKS(UML::Requirement)" type="" description="" unit="" values="" default="EKS"/>
+					<Tag name="AWS_Arquesoft::AWS Elastic IP Address(UML::Requirement)" type="" description="" unit="" values="" default="Elastic IP Address"/>
+					<Tag name="AWS_Arquesoft::AWS Event Bridge(UML::Requirement)" type="" description="" unit="" values="" default="Event Bridge"/>
+					<Tag name="AWS_Arquesoft::AWS Event Bus(UML::Requirement)" type="" description="" unit="" values="" default="Event Bus"/>
+					<Tag name="AWS_Arquesoft::AWS Event Rule(UML::Requirement)" type="" description="" unit="" values="" default="Event Rule"/>
+					<Tag name="AWS_Arquesoft::AWS Glue Job(UML::Requirement)" type="" description="" unit="" values="" default="Glue Job"/>
+					<Tag name="AWS_Arquesoft::AWS GraphQL API(UML::Requirement)" type="" description="" unit="" values="" default="GraphQL API"/>
+					<Tag name="AWS_Arquesoft::AWS Hosted Zone(UML::Requirement)" type="" description="" unit="" values="" default="Hosted Zone"/>
+					<Tag name="AWS_Arquesoft::AWS IAM User(UML::Requirement)" type="" description="" unit="" values="" default="IAM User"/>
+					<Tag name="AWS_Arquesoft::AWS Internet Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Internet Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS KMS Key(UML::Requirement)" type="" description="" unit="" values="" default="KMS Key"/>
+					<Tag name="AWS_Arquesoft::AWS Lambda Function(UML::Requirement)" type="" description="" unit="" values="" default="Lambda Function"/>
+					<Tag name="AWS_Arquesoft::AWS Load Balancer(UML::Requirement)" type="" description="" unit="" values="" default="Load Balancer"/>
+					<Tag name="AWS_Arquesoft::AWS Namespace(UML::Requirement)" type="" description="" unit="" values="" default="Namespace"/>
+					<Tag name="AWS_Arquesoft::AWS NAT Gateway(UML::Requirement)" type="" description="" unit="" values="" default="NAT Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS Network Interface(UML::Requirement)" type="" description="" unit="" values="" default="Network Interface"/>
+					<Tag name="AWS_Arquesoft::AWS Pod(UML::Requirement)" type="" description="" unit="" values="" default="Pod"/>
+					<Tag name="AWS_Arquesoft::AWS PostgreSQL Instance(UML::Requirement)" type="" description="" unit="" values="" default="PostgreSQL Instance"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Cluster(UML::Requirement)" type="" description="" unit="" values="" default="RDS Cluster"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Instance(UML::Requirement)" type="" description="" unit="" values="" default="RDS Instance"/>
+					<Tag name="AWS_Arquesoft::AWS RDS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="RDS Security Group"/>
+					<Tag name="AWS_Arquesoft::AWS RestApi(UML::Requirement)" type="" description="" unit="" values="" default="Rest API"/>
+					<Tag name="AWS_Arquesoft::AWS Route Table(UML::Requirement)" type="" description="" unit="" values="" default="Route Table"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Access Point(UML::Requirement)" type="" description="" unit="" values="" default="S3 Access Point"/>
+					<Tag name="AWS_Arquesoft::AWS S3 Bucket(UML::Requirement)" type="" description="" unit="" values="" default="S3 Bucket"/>
+					<Tag name="AWS_Arquesoft::AWS Secret(UML::Requirement)" type="" description="" unit="" values="" default="Secret"/>
+					<Tag name="AWS_Arquesoft::AWS Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Security Group"/>
+					<Tag name="AWS_Arquesoft::AWS SNS Topic(UML::Requirement)" type="" description="" unit="" values="" default="SNS Topic"/>
+					<Tag name="AWS_Arquesoft::AWS SQS Queue(UML::Requirement)" type="" description="" unit="" values="" default="SQS Queue"/>
+					<Tag name="AWS_Arquesoft::AWS Statemachine(UML::Requirement)" type="" description="" unit="" values="" default="Statemachine"/>
+					<Tag name="AWS_Arquesoft::AWS Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
+					<Tag name="AWS_Arquesoft::AWS Task(UML::Requirement)" type="" description="" unit="" values="" default="Task"/>
+					<Tag name="AWS_Arquesoft::AWS Transit Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Transit Gateway"/>
+					<Tag name="AWS_Arquesoft::AWS UserPool(UML::Requirement)" type="" description="" unit="" values="" default="User Pool"/>
+					<Tag name="AWS_Arquesoft::AWS Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint Service(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint Service"/>
+					<Tag name="AWS_Arquesoft::AWS VPC Endpoint(UML::Requirement)" type="" description="" unit="" values="" default="VPC Endpoint"/>
+					<Tag name="AWS_Arquesoft::AWS VPC(UML::Requirement)" type="" description="" unit="" values="" default="VPC"/>
+					<Tag name="AWS_Arquesoft::AWS VPN(UML::Requirement)" type="" description="" unit="" values="" default="VPN"/>
+					<Tag name="AWS_Arquesoft::AWS WAF(UML::Requirement)" type="" description="" unit="" values="" default="WAF"/>
+					<Tag name="AWS_Arquesoft::AWS WebACL(UML::Requirement)" type="" description="" unit="" values="" default="Web ACL"/>
+					<Tag name="AWS_Arquesoft::AWS WorkGroup(UML::Requirement)" type="" description="" unit="" values="" default="WorkGroup"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="ACH OCI" notes="" cx="382" cy="478" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="OCI_Arquesoft::OCI API Gateway(UML::Requirement)" type="" description="" unit="" values="" default="API Gateway"/>
+					<Tag name="OCI_Arquesoft::OCI Autonomous Database(UML::Requirement)" type="" description="" unit="" values="" default="Autonomous Database"/>
+					<Tag name="OCI_Arquesoft::OCI Availability Domain(UML::Requirement)" type="" description="" unit="" values="" default="Availability Domain"/>
+					<Tag name="OCI_Arquesoft::OCI Boot Volume(UML::Requirement)" type="" description="" unit="" values="" default="Boot Volume"/>
+					<Tag name="OCI_Arquesoft::OCI Bucket(UML::Requirement)" type="" description="" unit="" values="" default="Bucket"/>
+					<Tag name="OCI_Arquesoft::OCI Cluster(UML::Requirement)" type="" description="" unit="" values="" default="Cluster"/>
+					<Tag name="OCI_Arquesoft::OCI Compartment(UML::Requirement)" type="" description="" unit="" values="" default="Compartment"/>
+					<Tag name="OCI_Arquesoft::OCI DB System(UML::Requirement)" type="" description="" unit="" values="" default="DB System"/>
+					<Tag name="OCI_Arquesoft::OCI DNS Zone(UML::Requirement)" type="" description="" unit="" values="" default="DNS Zone"/>
+					<Tag name="OCI_Arquesoft::OCI DRG(UML::Requirement)" type="" description="" unit="" values="" default="DRG"/>
+					<Tag name="OCI_Arquesoft::OCI File System(UML::Requirement)" type="" description="" unit="" values="" default="File System"/>
+					<Tag name="OCI_Arquesoft::OCI Firewall(UML::Requirement)" type="" description="" unit="" values="" default="Firewall"/>
+					<Tag name="OCI_Arquesoft::OCI Gateway(UML::Requirement)" type="" description="" unit="" values="" default="Gateway"/>
+					<Tag name="OCI_Arquesoft::OCI Image(UML::Requirement)" type="" description="" unit="" values="" default="Image"/>
+					<Tag name="OCI_Arquesoft::OCI Instance Pool(UML::Requirement)" type="" description="" unit="" values="" default="Instance Pool"/>
+					<Tag name="OCI_Arquesoft::OCI Instance(UML::Requirement)" type="" description="" unit="" values="" default="Instance"/>
+					<Tag name="OCI_Arquesoft::OCI IP Sec Connection(UML::Requirement)" type="" description="" unit="" values="" default="IP Sec Connection"/>
+					<Tag name="OCI_Arquesoft::OCI Load Balancer(UML::Requirement)" type="" description="" unit="" values="" default="Load Balancer"/>
+					<Tag name="OCI_Arquesoft::OCI Network Security Group(UML::Requirement)" type="" description="" unit="" values="" default="Network Security Group"/>
+					<Tag name="OCI_Arquesoft::OCI No SQL Table(UML::Requirement)" type="" description="" unit="" values="" default="No SQL Table"/>
+					<Tag name="OCI_Arquesoft::OCI Node Pool(UML::Requirement)" type="" description="" unit="" values="" default="Node Pool"/>
+					<Tag name="OCI_Arquesoft::OCI Private IP(UML::Requirement)" type="" description="" unit="" values="" default="Private IP"/>
+					<Tag name="OCI_Arquesoft::OCI Public IP(UML::Requirement)" type="" description="" unit="" values="" default="Public IP"/>
+					<Tag name="OCI_Arquesoft::OCI Queue(UML::Requirement)" type="" description="" unit="" values="" default="Queue"/>
+					<Tag name="OCI_Arquesoft::OCI SDDCS(UML::Requirement)" type="" description="" unit="" values="" default="SDDCS"/>
+					<Tag name="OCI_Arquesoft::OCI Security List(UML::Requirement)" type="" description="" unit="" values="" default="Security List"/>
+					<Tag name="OCI_Arquesoft::OCI Stream(UML::Requirement)" type="" description="" unit="" values="" default="Stream"/>
+					<Tag name="OCI_Arquesoft::OCI Subnet(UML::Requirement)" type="" description="" unit="" values="" default="Subnet"/>
+					<Tag name="OCI_Arquesoft::OCI Vault(UML::Requirement)" type="" description="" unit="" values="" default="Vault"/>
+					<Tag name="OCI_Arquesoft::OCI VCN(UML::Requirement)" type="" description="" unit="" values="" default="VCN"/>
+					<Tag name="OCI_Arquesoft::OCI Virtual Machine(UML::Requirement)" type="" description="" unit="" values="" default="Virtual Machine"/>
+					<Tag name="OCI_Arquesoft::OCI VNIC(UML::Requirement)" type="" description="" unit="" values="" default="VNIC"/>
+					<Tag name="OCI_Arquesoft::OCI Volume(UML::Requirement)" type="" description="" unit="" values="" default="Volume"/>
+					<Tag name="OCI_Arquesoft::OCI VPN Gateway(UML::Requirement)" type="" description="" unit="" values="" default="VPN Gateway"/>
+				</TaggedValues>
+			</Stereotype>
 		</Stereotypes>
 		<TaggedValueTypes/>
 		<ViewDefinitions/>
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="F5E3CDCCDA" name="ACH_Capa_de_Negocio" version="1.0" alias="Capa de Negocio" notes="Alias=Capa de Negocio;"/>
+	<Documentation id="F5E3CDCCDA" name="ACH_Capa_de_Negocio" version="1.0" alias="Vista de Negocio" notes="Alias=Vista de Negocio;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Negocio" notes="" cx="272" cy="218" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Negocio" notes="" cx="348" cy="231" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="ACH::Canal(UML::Class)" type="" description="" unit="" values="" default="Canal"/>
+					<Tag name="ACH::Canal(UML::Interface)" type="" description="" unit="" values="" default="Canal"/>
 					<Tag name="ACH::Capacidad(UML::Class)" type="" description="" unit="" values="" default="Capacidad"/>
 					<Tag name="ACH::Cliente(UML::Class)" type="" description="" unit="" values="" default="Cliente"/>
-					<Tag name="ACH::Componente Actor(ACH::Class)" type="" description="" unit="" values="" default="Componente Actor"/>
-					<Tag name="ACH::Componente Interno(ACH::Class)" type="" description="" unit="" values="" default="Componente Interno"/>
-					<Tag name="ACH::Componente(UML::Class)" type="" description="" unit="" values="" default="Componente"/>
+					<Tag name="ACH::Componente de Negocio(UML::Component)" type="" description="" unit="" values="" default="Componente de Negocio"/>
+					<Tag name="ACH::Estructura de Negocio(UML::Boundary)" type="" description="" unit="" values="" default="Estructura de Negocio"/>
 					<Tag name="ACH::Línea de Negocio(UML::Class)" type="" description="" unit="" values="" default="Línea de Negocio"/>
 					<Tag name="ACH::Marca(UML::Class)" type="" description="" unit="" values="" default="Marca"/>
+					<Tag name="ACH::Negocio(UML::Class)" type="" description="" unit="" values="" default="Negocio"/>
 					<Tag name="ACH::Producto(UML::Class)" type="" description="" unit="" values="" default="Producto"/>
 					<Tag name="ACH::Recurso TI(UMLPatternSilent)" type="" description="" unit="" values="" default="Recurso TI"/>
 					<Tag name="ACH::Recurso(UML::Class)" type="" description="" unit="" values="" default="Recurso"/>
@@ -2379,10 +2582,10 @@ AAEAPgAAAAICAAAAAA==
 		<Metamodel/>
 	</Content>
 </UMLProfile><UMLProfile profiletype="uml2">
-	<Documentation id="361438F64E" name="ACH_Capa_de_Seguridad" version="1.0" alias="Capa de Seguridad" notes="Alias=Capa de Seguridad;"/>
+	<Documentation id="361438F64E" name="ACH_Capa_de_Seguridad" version="1.0" alias="Vista de Seguridad" notes="Alias=Vista de Seguridad;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Capa de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista de Seguridad" notes="" cx="238" cy="88" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -2399,6 +2602,21 @@ AAEAPgAAAAICAAAAAA==
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
+					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="ACH::Aplicación(UML::Component)" type="" description="" unit="" values="" default="Aplicación"/>
+					<Tag name="ACH::Base de datos lógica(UML::Class)" type="" description="" unit="" values="" default="Base de Datos Lógica"/>
+					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
+					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
+					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
+					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
+					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>
