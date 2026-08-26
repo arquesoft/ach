@@ -112,7 +112,7 @@ oT1qUEsFBgAAAAABAAEAPgAAAJUCAAAAAA==
 					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Base de datos lógica" metatype="Base de datos lógica" instanceType="Base de datos física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Base de datos lógica" metatype="Base de datos lógica" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAADEDgAAxA4A
 AAAAAAAAAAAAwMDAwMDAwMDAxLm0zamU05x415Nf2I9S2I9S15Nf05x4zamU
 xLm0wMDAwMDAwMDAwMDAwMDAy62d2I9S1YhG04I7141P2I9S2I9S2I9S1ZJi
@@ -153,7 +153,10 @@ I6I9alBLBQYAAAAAAQABAD4AAACWAgAAAAA=
 </Image>
 				<AppliesTo>
 					<Apply type="Class">
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Datos"/>
+						<Property name="_makeComposite" value="True"/>
 						<Property name="isActive" value=""/>
+						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
@@ -161,12 +164,32 @@ I6I9alBLBQYAAAAAAQABAD4AAACWAgAAAAA=
 					<Tag name="Motor base de datos" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
-			<Stereotype name="Canal" metatype="Canal" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_BusinessInterface" baseStereotypes="ArchiMate3::ArchiMate_BusinessInterface">
+			<Stereotype name="Canal" metatype="Canal" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIALKKF11rbIRe4wEAAKQGAAAHABEAc3RyLmRhdFVUDQAHBSyL
+agUsi2oFLItqvVTLTsJAFD3bmvgPkxoTSIxi3GlcIDVqIhvs3lQoWlMqUkqM
+ho/1A1j5A557p7UgPgoL0nR6Z+Y+zjkzvSkeEGCIEAYDWhESbGMLbzqa/Bng
+CRP6jPmtoYE9rjVQx8mCV6zRhdchPb57znsf8DG4ZlSglQ3fmGOKDHccS1xd
+5kvQZ/Z77o243uOK4W6gM8NZlzt2bhgjeWz9XVo9zSJ1ZJwpxmAJi2TtLVWv
+wSWfEC/KqkUroTWi7Sq3kqW1CqbTL77zTNrkIFViznzmGJJ/wHqCuFTdYcSt
+qiGME8ad8nXJ0VYPWd/N6zg8l6q+1j+ikoa8LhmVEkXAOGHpc2eoura4lmhO
+y9FFkzvCeUKflK+ch5xalFcRNep8bIWChaNRcifGWqGJfeywThMXOMYVPM4k
+rmBiNXNUjVT1WgdrR+MDKrAuzs5GcHqqpdyliDcgU7wf9KmC0NsIwrbqJ/9z
+hNdc0aoI2xtB6Ov/n9C/T4+R9pFVUPorovw72/+Zyq5gu98R6xvcaO+STANV
+wnYqq/sz98SSFelj0tnO9d7Inx2StXiJPpL1t15zpn5y/wc/dpzFnuxx9xFF
+L7W1DGNixls8hp1AlJ7pucgJZDlqOwoTYSTR9jTEK8sRvCvmbkVOU3wCUEsB
+AhcLFAAAAAgAsooXXWtshF7jAQAApAYAAAcACQAAAAAAAAAAAACAAAAAAHN0
+ci5kYXRVVAUABwUsi2pQSwUGAAAAAAEAAQA+AAAAGQIAAAAA
+</Image>
 				<AppliesTo>
-					<Apply type="Interface"/>
+					<Apply type="Association">
+						<Property name="compositionKind" value="none"/>
+						<Property name="direction" value="Unspecified"/>
+					</Apply>
 				</AppliesTo>
 				<TaggedValues>
+					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
 					<Tag name="ID" type="" description="" unit="" values="" default=""/>
+					<Tag name="Tipo Canal" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Capacidad" metatype="Capacidad" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Capability" baseStereotypes="ArchiMate3::ArchiMate_Capability">
@@ -431,12 +454,24 @@ AAAAAAEAAQA+AAAAnAMAAAAA
 			<Stereotype name="Instancia de Aplicación" metatype="Instancia de Aplicación" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationComponent" baseStereotypes="ArchiMate3::ArchiMate_ApplicationComponent">
 				<AppliesTo>
 					<Apply type="Component">
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
+						<Property name="_makeComposite" value="True"/>
 						<Property name="isIndirectlyInstantiated" value="true"/>
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Implementa a" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo de Ejecutable" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Integración" metatype="Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Assembly">
+						<Property name="direction" value="Source -&gt; Destination"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Interfaz de Integración" metatype="Interfaz de Integración" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
@@ -452,48 +487,52 @@ AAAAAAEAAQA+AAAAnAMAAAAA
 				<TaggedValues>
 					<Tag name="Dominio" type="" description="" unit="" values="" default=""/>
 					<Tag name="Endpoint" type="" description="" unit="" values="" default=""/>
-					<Tag name="Es Persistente" type="" description="" unit="" values="" default=""/>
-					<Tag name="Es Síncrono" type="" description="" unit="" values="" default=""/>
+					<Tag name="Es Persistente" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Es Síncrono" type="Boolean" description="" unit="" values="True,False" default=""/>
 					<Tag name="ID" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Colas Backout Queue" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Colas Dead Letter Queue" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Colas Priorización Mensajes" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Colas Publicador-Suscriptor" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Colas Punto a Punto" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Colas Request-Reply" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Composición" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Exposición" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Adaptador-Conector" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Batch Processing" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Composición" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Enriquecimiento" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Enrutamiento" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Orquestación" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Transformación" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Integración Validación" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Pass Through" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Seguridad Gateway" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Seguridad Pass Through Seguro" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Seguridad Terminación TLS-mTLS" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Seguridad Wrapper Seguro" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Automatización de Flujos de Archivos" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Cifrado y Decifrado de Archivos" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Compresión y Descompresión" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Consolidación de Archivos" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Distribución Multidestino" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA File Pickup / File Drop" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Intercambio B2B de Archivos" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Intercambio Seguro Archivos" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA MFT" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Transferencia Basada en Eventos" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón STA Transferencia Programada" type="" description="" unit="" values="" default=""/>
-					<Tag name="Patrón Wrapper" type="" description="" unit="" values="" default=""/>
+					<Tag name="Patrón Colas Backout Queue" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Colas Dead Letter Queue" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Colas Priorización Mensajes" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Colas Publicador-Suscriptor" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Colas Punto a Punto" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Colas Request-Reply" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Composición" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Exposición" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Adaptador-Conector" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Batch Processing" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Composición" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Enriquecimiento" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Enrutamiento" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Orquestación" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Transformación" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Integración Validación" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Pass Through" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Seguridad Gateway" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Seguridad Pass Through Seguro" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Seguridad Terminación TLS-mTLS" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Seguridad Wrapper Seguro" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Automatización de Flujos de Archivos" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Cifrado y Decifrado de Archivos" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Compresión y Descompresión" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Consolidación de Archivos" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Distribución Multidestino" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA File Pickup / File Drop" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Intercambio B2B de Archivos" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Intercambio Seguro Archivos" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA MFT" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Transferencia Basada en Eventos" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón STA Transferencia Programada" type="Boolean" description="" unit="" values="True,False" default=""/>
+					<Tag name="Patrón Wrapper" type="Boolean" description="" unit="" values="True,False" default=""/>
 					<Tag name="Tipo de Interfaz de Integración" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Interfaz de Integración Física" metatype="Interfaz de Integración Física" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_ApplicationInterface" baseStereotypes="ArchiMate3::ArchiMate_ApplicationInterface">
 				<AppliesTo>
-					<Apply type="Interface"/>
+					<Apply type="Interface">
+						<Property name="_defaultDiagramType" value="ACH::Diagrama de Aplicaciones"/>
+						<Property name="_makeComposite" value="True"/>
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Herramienta Integración" type="" description="" unit="" values="" default=""/>
@@ -507,6 +546,16 @@ AAAAAAEAAQA+AAAAnAMAAAAA
 						<Property name="isActive" value=""/>
 					</Apply>
 				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Lineamiento de Arquitectura" metatype="Lineamiento de Arquitectura" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Requirement"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Categoría Lineamiento" type="" description="" unit="" values="" default=""/>
+					<Tag name="Dominio Lineamiento" type="" description="" unit="" values="" default=""/>
+					<Tag name="ID Lineamiento" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Marca" metatype="Marca" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Representation" baseStereotypes="ArchiMate3::ArchiMate_Representation">
 				<AppliesTo>
@@ -593,6 +642,18 @@ AAAA
 				<TaggedValues>
 					<Tag name="ID" type="" description="" unit="" values="" default=""/>
 					<Tag name="Tipo Valor" type="" description="" unit="" values="" default=""/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Principio de Arquitectura" metatype="Principio de Arquitectura" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Feature">
+						<Property name="isStatic" value="false"/>
+					</Apply>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="Categoría Principio" type="" description="" unit="" values="" default=""/>
+					<Tag name="Dominio Principio" type="" description="" unit="" values="" default=""/>
+					<Tag name="ID Principio" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 			<Stereotype name="Producto" metatype="Producto" notes="" cx="0" cy="0" bgcolor="12648447" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0" generalizes="ArchiMate3::ArchiMate_Product" baseStereotypes="ArchiMate3::ArchiMate_Product">
@@ -789,34 +850,6 @@ AAEAPgAAAAICAAAAAA==
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="Tipo Tercero" type="" description="" unit="" values="" default=""/>
-				</TaggedValues>
-			</Stereotype>
-			<Stereotype name="Tipo Canal" metatype="Tipo Canal" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
-				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIALKKF11rbIRe4wEAAKQGAAAHABEAc3RyLmRhdFVUDQAHBSyL
-agUsi2oFLItqvVTLTsJAFD3bmvgPkxoTSIxi3GlcIDVqIhvs3lQoWlMqUkqM
-ho/1A1j5A557p7UgPgoL0nR6Z+Y+zjkzvSkeEGCIEAYDWhESbGMLbzqa/Bng
-CRP6jPmtoYE9rjVQx8mCV6zRhdchPb57znsf8DG4ZlSglQ3fmGOKDHccS1xd
-5kvQZ/Z77o243uOK4W6gM8NZlzt2bhgjeWz9XVo9zSJ1ZJwpxmAJi2TtLVWv
-wSWfEC/KqkUroTWi7Sq3kqW1CqbTL77zTNrkIFViznzmGJJ/wHqCuFTdYcSt
-qiGME8ad8nXJ0VYPWd/N6zg8l6q+1j+ikoa8LhmVEkXAOGHpc2eoura4lmhO
-y9FFkzvCeUKflK+ch5xalFcRNep8bIWChaNRcifGWqGJfeywThMXOMYVPM4k
-rmBiNXNUjVT1WgdrR+MDKrAuzs5GcHqqpdyliDcgU7wf9KmC0NsIwrbqJ/9z
-hNdc0aoI2xtB6Ov/n9C/T4+R9pFVUPorovw72/+Zyq5gu98R6xvcaO+STANV
-wnYqq/sz98SSFelj0tnO9d7Inx2StXiJPpL1t15zpn5y/wc/dpzFnuxx9xFF
-L7W1DGNixls8hp1AlJ7pucgJZDlqOwoTYSTR9jTEK8sRvCvmbkVOU3wCUEsB
-AhcLFAAAAAgAsooXXWtshF7jAQAApAYAAAcACQAAAAAAAAAAAACAAAAAAHN0
-ci5kYXRVVAUABwUsi2pQSwUGAAAAAAEAAQA+AAAAGQIAAAAA
-</Image>
-				<AppliesTo>
-					<Apply type="Association">
-						<Property name="compositionKind" value="none"/>
-						<Property name="direction" value="Unspecified"/>
-					</Apply>
-				</AppliesTo>
-				<TaggedValues>
-					<Tag name="_lineStyle" type="" description="" unit="" values="" default="OrthogonalR"/>
-					<Tag name="ID" type="" description="" unit="" values="" default=""/>
-					<Tag name="Tipo Canal" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>
