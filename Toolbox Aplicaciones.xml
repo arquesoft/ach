@@ -1,9 +1,9 @@
 <?xml  version='1.0' encoding='windows-1252' ?>
 <UMLProfile profiletype="uml2">
-	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Vista Lógica de Aplicaciones" notes="Alias=Vista Lógica de Aplicaciones;"/>
+	<Documentation id="2627AD26F5" name="ACH_Capa_de_Aplicaciones" version="1.0" alias="Vista Lógica de Solución" notes="Alias=Vista Lógica de Solución;"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Vista Lógica de Aplicaciones" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="Vista Lógica de Solución" notes="" cx="281" cy="127" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
@@ -13,7 +13,7 @@
 					<Tag name="ACH::Interfaz de Integración(UML::Interface)" type="" description="" unit="" values="" default="Interfaz de Integración"/>
 					<Tag name="ACH::Repositorio lógico(UML::Class)" type="" description="" unit="" values="" default="Repositorio Lógico"/>
 					<Tag name="ACH::Sistema(UML::Class)" type="" description="" unit="" values="" default="Sistema"/>
-					<Tag name="ACH::Solución(UML::PackagingComponent)" type="" description="" unit="" values="" default="Solución"/>
+					<Tag name="ACH::Solución(UML::Component)" type="" description="" unit="" values="" default="Solución"/>
 					<Tag name="UML::Component" type="" description="" unit="" values="" default="Componente"/>
 				</TaggedValues>
 			</Stereotype>
@@ -23,7 +23,8 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="ACH::Asociación(UML::Association)" type="" description="" unit="" values="" default="Asociación"/>
-					<Tag name="ACH::Tipo Canal(UML::Association)" type="" description="" unit="" values="" default="Tipo Canal"/>
+					<Tag name="ACH::Integración(UML::Assembly)" type="" description="" unit="" values="" default="Integración"/>
+					<Tag name="ACH::Canal(UML::Association)" type="" description="" unit="" values="" default="Canal"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>
